@@ -1,5 +1,5 @@
 
 <?php include "header.html"; ?>
     <body>
-        <div>TODO write content</div>
+        <div>Novo</div>
 <?php include "footer.html"; ?>
