@@ -3,7 +3,7 @@
 include "header.html"; 
 //include_once "db.php"; 
 ?>
-<div style="border:1px solid black; font-size: 26pt; text-align: center;"> Najbolj popularno!</div>
+<div style=" font-size: 26pt; text-align: center; font-family: 'Comic Sans MS'"> Najbolj popularno!</div><br><br>
 <div style="border:1px solid black; font-size: 26pt; text-align: center;"> 
 <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
