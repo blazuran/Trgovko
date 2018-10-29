@@ -50,6 +50,6 @@ foreach ($html->find('div.product-box') as $element) {
     $item[]= $link . $element->find('h3 a',0)->href; //url   
 }
 
-print_r($item);
+print_r($item); //izpis
 
 ?>
