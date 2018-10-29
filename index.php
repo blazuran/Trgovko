@@ -1,7 +1,7 @@
 
 <?php 
 include "header.html"; 
-//include_once "db.php"; 
+include_once "db.php"; 
 ?>
 <div style="border:1px solid black; font-size: 26pt; text-align: center;"> Najbolj popularno!</div>
 <div style="border:1px solid black; font-size: 26pt; text-align: center;"> 
@@ -10,8 +10,20 @@ include "header.html";
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX
  * začnemo z najpopularnejšimi nato vedno manj. 
  */
-$products_from_db = sprintf("SELECT pr.Title, pr.Rating, pic.url FROM Products pr INNER JOIN Pictures pic ON pr.ID = pic.Products_ID ORDER BY Rating DESC;");
-echo $products_from_db;
+
+
+$sql = "SELECT * FROM `products` ORDER BY Rating DESC";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        
+        echo "<br> Name: ". $row["Title"]. " Cena:" . $row["Price"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
 /* execute query 
  * izpis po 3/4 v vrsto. 
  * podatke dobimo urejeno PADAJOČE
