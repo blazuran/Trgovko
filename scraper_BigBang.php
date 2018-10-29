@@ -1,23 +1,4 @@
 <?php
-
-/* Za samo eden izdelek 
-  $html = file_get_html('https://www.bigbang.si/prenosni-racunalniki/macbook-air-13-i5-188gb-apple-128gb-ssdhd6000-601480');
-
-  $title = $html->find('div[id=ratingTitleLogo] h1', 0)->plaintext;
-
-  echo $title;
-
-
-
-  foreach ($html->find('table.productSpecsTable tr') as $item) {
-  $items[] = $item->plaintext;
-
-  }
-
-  foreach($items as $spec){
-  echo "$spec <br>" ;
-  }
-
  */
 
 
@@ -25,7 +6,7 @@ include('simple_html_dom.php');
 
 $html = file_get_html('https://www.bigbang.si/prenosni-racunalniki/');
 
-
+/*
 foreach ($html->find('div.product-box h3') as $element) {
     $title = $element->plaintext;
     //$opis =  substr($title, 45); brez Prenosni računalnik
@@ -53,7 +34,22 @@ foreach ($html->find('div.product-box div.productImage span.imgWrap img') as $el
     $pc_picture[] = $picture; 
     echo $picture . '<br>';
 }
+ 
+ */
+
+foreach ($html->find('div.product-box') as $element) {
+    
+    $item[] =  $element->find('h3',0)->plaintext; //title
+    
+    $price = $element->find('div.price',0)->plaintext; //price
+    $item[] = substr($price, 0, strpos($price, '€'));
+    
+    $item[] = $element->find('div.productImage span.imgWrap img',0)->src; //picture
+   
+    $link = "https://www.bigbang.si";
+    $item[]= $link . $element->find('h3 a',0)->href; //url   
+}
+
+print_r($item);
 
 ?>
-
-
