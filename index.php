@@ -12,7 +12,7 @@ include_once "db.php";
  */
 
 
-$sql = "SELECT * FROM `products` ORDER BY Rating DESC";
+$sql = "SELECT * FROM `products` ORDER BY Rating DESC limit 10";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
         echo "<br> Name: ". $row["Title"]. " Cena:" . $row["Price"] . "<br>";
     }
 } else {
-    echo "0 results";
+    echo "Ni izdelkov";
 }
 /* execute query 
  * izpis po 3/4 v vrsto. 
