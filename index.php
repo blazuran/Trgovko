@@ -3,8 +3,8 @@
 include "header.html"; 
 include_once "db.php"; 
 ?>
-<div style=" font-size: 26pt; text-align: center; font-family: 'Comic Sans MS'"> Najbolj popularno!</div><br><br>
-<div style="border:1px solid black; font-size: 26pt; text-align: center;"> 
+<div style="text-align: center; font-size:26pt; font-family: 'Comic Sans MS'"> Najbolj popularno!</div><br><br><hr>
+<div class="col-md-3 offset-md-5" style="border:5px solid black; padding-bottom:100px;margin-right:20%; width:400px; height:100px; font-size: 26pt; text-align: center;">
 <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX
