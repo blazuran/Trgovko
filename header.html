@@ -14,32 +14,21 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="bg">
-<div class="row">
 
-    <div class="col-sm-8" style="padding-left: 9%"><a href="index.php"><img src="./Pics/Logo.png" alt="Logo" style="width:30%;height:80%"></a></div>
-    <div class="col-sm-4">
-        <button type="button" class="btn btn-primary"><a href="login.php" class="h5">Prijava</a></button>
-        <button type="button" class="btn btn-secondary"><a href="register.php" class="h5"> Registracija</a></button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.php"> <img src="./Pics/Logo.png" alt="Logo" style="width:15%;height:69%" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="login.php" class="h5"><button type="button" class="btn btn-primary">Prijava</button></a>
+            </li>
+            <li class="nav-item" style="margin-left: 1%">
+                <a href="register.php" class="h5"><button type="button" class="btn btn-secondary"> Registracija</button></a>
+            </li>
+        </ul>
+
     </div>
-</div>
-
-<br>
-<div clss="row">
-    <div class="col-md-7 ml-md-auto" style="font-family: 'Comic Sans MS'">Kaj lahko danes poiscemo za vas?</div>
-</div>
-<br>
-<div clss="row">
-    <div class="col-md-3 offset-md-4">
-        <form action="results.php" method="post">
-            <table>
-                <tr>
-                    <td><input class="form-control" type="text" placeholder="Danes iscem..." style="width:600px"></td>
-                    <td>
-                        <button type="submit" class="btn btn-danger" style="margin-left: 5px" value="Poisci">Poišči</button>
-                    </td>
-                </tr>
-            </table> <br><br>
-        </form>
-    </div> <br> <br>
-</div>
+</nav>

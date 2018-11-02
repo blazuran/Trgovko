@@ -3,8 +3,27 @@
 include "header.html"; 
 include_once "db.php"; 
 ?>
-<div style="text-align: center; font-size:26pt; font-family: 'Comic Sans MS'"> Najbolj popularno!</div><br><br><hr>
-<div class="col-md-3 offset-md-5" style="border:5px solid black; padding-bottom:100px;margin-right:20%; width:400px; height:100px; font-size: 26pt; text-align: center;">
+<div class="bg" class="p-3 mb-2 bg-light text-dark">
+<div clss="row">
+    <div class="col-md-8 ml-md-auto" style="font-family: 'Comic Sans MS'; font-size:25px; padding-top:10px;">Kaj lahko danes poiscemo za vas?</div>
+</div>
+<br>
+<div clss="row">
+    <div class="col-md-3 offset-md-4">
+        <form action="results.php" method="post">
+            <table>
+                <tr>
+                    <td><input class="form-control" type="text" placeholder="Danes iscem..." style="width:600px"></td>
+                    <td>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5px" value="Poisci">Poišči</button>
+                    </td>
+                </tr>
+            </table> <br><br>
+        </form>
+    </div> <br> <br>
+</div>
+<div style="text-align: center; font-size:26pt; font-family: 'Comic Sans MS'"> Najbolj popularno!</div><br><br>
+<div class="col-md-3 offset-md-5" style= padding-bottom:100px;margin-right:20%; width:400px; height:100px; font-size: 26pt; text-align: center;">
 <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX
@@ -32,6 +51,7 @@ if ($result->num_rows > 0) {
  */
 ?>
 </div>
+
 <?php 
 include "footer.html"; 
 ?>
