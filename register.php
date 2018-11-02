@@ -8,7 +8,7 @@ include "header.html";
         <div>Surname: <input type="text" name="surname" placeholder="Surname..."></div><br>
         <div>Email: <input type="email" name="email" placeholder="Email..."></div><br> 
         <div>Password: <input type="password" name="password" placeholder="Password..."></div><br>
-        <input type="submit" value="Potrdi">
+        <input type="submit" name="reg_user" value="Potrdi">
     </form>
     
 </div>
