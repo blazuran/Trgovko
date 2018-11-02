@@ -13,17 +13,25 @@ include_once "db.php";
         <form action="results.php" method="post">
             <table>
                 <tr>
-                    <td><input class="form-control" type="text" placeholder="Danes iscem..." style="width:600px"></td>
+                    <td><input class="form-control" type="text" placeholder="Danes iscem..." style="width:470px"></td>
                     <td>
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5px" value="Poisci">Poišči</button>
                     </td>
                 </tr>
-            </table> <br><br>
+            </table>
         </form>
     </div> <br> <br>
 </div>
-<div style="text-align: center; font-size:26pt; font-family: 'Arial'"> Najbolj popularno!</div><br><br>
-<div class="col-md-3 offset-md-5" style= padding-bottom:100px;margin-right:20%; width:400px; height:100px; font-size: 26pt; text-align: center;">
+    <hr>
+<div style="text-align: center; font-size:26pt; font-family: 'Arial'"> Najbolj popularno! <br>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+</div>
+    <!-- IZDELKI PRVA STRAN -->
+<div class="col-md-3 offset-md-5" style= padding-bottom:100px;margin-right:20%;border:dotted;">
 <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX

@@ -14,3 +14,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.checked {
+    color: orange;
+}
+.login{
+    position: fixed;
+    border: 2px dotted black;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-49%, -51%);
+}
