@@ -1,6 +1,5 @@
 <?php 
-include "header.html"; 
-//include_once "db.php"; 
+include "header.php"; 
 ?>
 <div class="bg" class="p-3 mb-2 bg-light text-dark">
 

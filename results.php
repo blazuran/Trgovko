@@ -1,5 +1,5 @@
 
-<?php include "header.html"; 
+<?php include "header.php"; 
 /*
  * izpis rezultatov glede na iskalni niz.
  * Tukaj ponudimo filtre. 

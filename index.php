@@ -1,6 +1,6 @@
 
 <?php 
-include "header.html"; 
+include "header.php"; 
 include_once "db.php"; 
 ?>
 <div class="bg" class="p-3 mb-2 bg-light text-dark">

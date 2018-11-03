@@ -1,3 +1,7 @@
+<?php
+include_once "session.php";
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -25,12 +29,26 @@ and open the template in the editor.
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="login.php" class="h5"><button type="button" class="btn btn-outline-primary">Prijava</button></a>
-            </li>
-            <li class="nav-item" style="margin-left: 10px">
-                <a href="register.php" class="h5"><button type="button" class="btn btn-outline-secondary"> Registracija</button></a>
-            </li>
+            <?php
+            if(isset($_SESSION['Name']) && isset($_SESSION['Surname']))
+            {
+                echo "<li class='nav-item'>";
+                echo "<a href='favorites.php' class='h5'><button type='button' class='btn btn-outline-primary'>".$_SESSION['Name']." ".$_SESSION['Surname']."</button></a>";
+                echo "</li>";
+                echo "<li class='nav-item' style='margin-left: 10px'>";
+                echo "<a href='logout.php' class='h5'><button type='button' class='btn btn-outline-primary'>Odjava</button></a>";
+                echo "</li>";
+            }
+            else
+            {
+                echo "<li class='nav-item'>";
+                echo "<a href='login.php' class='h5'><button type='button' class='btn btn-outline-primary'>Prijava</button></a>";
+                echo "</li>";
+                echo "<li class='nav-item' style='margin-left: 10px'>";
+                echo "<a href='register.php' class='h5'><button type='button' class='btn btn-outline-secondary'> Registracija</button></a>";
+                echo "</li>";
+            }
+            ?>
         </ul>
 
     </div>
