@@ -1,5 +1,17 @@
 <?php
 include_once "session.php";
+include_once 'db.php';
+$sql  = "SELECT DateTime FROM Products WHERE ID = 1";
+$query = mysqli_query($conn, $sql);
+if(mysqli_num_rows($query) == 1)
+{
+   $row = mysqli_fetch_assoc($query);
+   $timeFromDB = strtotime($row['DateTIme']);
+   if(time()-$timeFromDB >= 43200 )
+   {
+      //klic webscraperju, ko pride user na spletno stran 
+   }
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,10 +45,10 @@ and open the template in the editor.
             if(isset($_SESSION['Name']) && isset($_SESSION['Surname']))
             {
                 echo "<li class='nav-item'>";
-                echo "<a href='favorites.php' class='h5'><button type='button' class='btn btn-outline-primary'>".$_SESSION['Name']." ".$_SESSION['Surname']."</button></a>";
+                echo "<a href='favorites.php' class='h5'><button type='button' class='btn btn-outline-primary'>Priljubljeno</button></a>";
                 echo "</li>";
                 echo "<li class='nav-item' style='margin-left: 10px'>";
-                echo "<a href='logout.php' class='h5'><button type='button' class='btn btn-outline-primary'>Odjava</button></a>";
+                echo "<a href='logout.php' class='h5'><button type='button' class='btn btn-outline-secondary'>Odjava</button></a>";
                 echo "</li>";
             }
             else
