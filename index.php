@@ -45,8 +45,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        
-        echo "<br> Name: ". $row["Title"]. " Cena:" . $row["Price"] . "<br>";
+        $id = $row["ID"];
+        echo "<br> Name: <a href='product.php?id=$id'>". $row["Title"]. "</a> Cena:" . $row["Price"] . "<br>";
     }
 } else {
     echo "Ni izdelkov";
