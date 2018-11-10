@@ -3,7 +3,7 @@ include "header.php";
 ?>
 <div class="bg" class="p-3 mb-2 bg-light text-dark">
 
-    <div  class="login" style="text-align: center; width:300px; padding: 25px;">
+    <div  class="login" ">
         <form action="register_post.php" method="POST">
 
             <div class="form-group">

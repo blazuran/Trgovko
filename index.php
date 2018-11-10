@@ -46,6 +46,9 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         $id = $row["ID"];
+        ?>
+        <div class
+    <?php
         echo "<br> Name: <a href='product.php?id=$id'>". $row["Title"]. "</a> Cena:" . $row["Price"] . "<br>";
     }
 } else {
