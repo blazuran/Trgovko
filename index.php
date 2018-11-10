@@ -30,8 +30,9 @@ include_once "db.php";
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
 </div>
+
     <!-- IZDELKI PRVA STRAN -->
-<div class="col-md-3 offset-md-5" style= padding-bottom:100px;margin-right:20%;border:dotted;">
+    <div class="container">
 <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX
@@ -44,12 +45,17 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+
     while($row = $result->fetch_assoc()) {
+
         $id = $row["ID"];
+?>
+        <div class="okvir">
+        <?php
+        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a><br> Cena:" . $row["Price"] . "<br>"; //za oceno še zrovn pa sliko po možnosti
         ?>
-        <div class
-    <?php
-        echo "<br> Name: <a href='product.php?id=$id'>". $row["Title"]. "</a> Cena:" . $row["Price"] . "<br>";
+        </div>
+        <?php
     }
 } else {
     echo "Ni izdelkov";
@@ -58,11 +64,10 @@ if ($result->num_rows > 0) {
  * izpis po 3/4 v vrsto. 
  * podatke dobimo urejeno PADAJOČE
  * 
- * Koliko izdelkov na strani? 
+ * Koliko izdelkov na strani? na prvi strani max 6 izdelkov ?
  */
 ?>
-</div>
-
+    </div>
 <?php 
 include "footer.html"; 
 ?>

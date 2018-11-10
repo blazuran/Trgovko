@@ -34,18 +34,18 @@ and open the template in the editor.
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php"> <img src="./Pics/Logo.png" alt="Logo" style="width:10em;height:3em" ></a>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php"> <div style="background-color: white; padding: 2px;border-radius: 15px"><img src="./Pics/Logo.png" alt="Logo" style="width:10em;height:3em" ></div></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto" style="margin-left: 88%">
+        <ul class="navbar-nav mr-auto" style="margin-left: 85%">
             <?php
             if(isset($_SESSION['Name']) && isset($_SESSION['Surname']))
             {
                 echo "<li class='nav-item'>";
-                echo "<a href='favorites.php' class='h5'><button type='button' class='btn btn-outline-primary'>Priljubljeno</button></a>";
+                echo "<a href='favorites.php' class='h5'><button type='button' class='btn btn-outline-info my-2 my-sm-0'>Priljubljeno</button></a>";
                 echo "</li>";
                 echo "<li class='nav-item' style='margin-left: 10px'>";
                 echo "<a href='logout.php' class='h5'><button type='button' class='btn btn-outline-secondary'>Odjava</button></a>";
@@ -54,7 +54,7 @@ and open the template in the editor.
             else
             {
                 echo "<li class='nav-item'>";
-                echo "<a href='login.php' class='h5'><button type='button' class='btn btn-outline-primary'>Prijava</button></a>";
+                echo "<a href='login.php' class='h5'><button type='button' class='btn btn-outline-info my-2 my-sm-0'>Prijava</button></a>";
                 echo "</li>";
                 echo "<li class='nav-item' style='margin-left: 10px'>";
                 echo "<a href='register.php' class='h5'><button type='button' class='btn btn-outline-secondary'> Registracija</button></a>";
