@@ -43,16 +43,21 @@ include_once "db.php";
 $sql = "SELECT * FROM `products` ORDER BY Rating DESC limit 10";
 $result = $conn->query($sql);
 
+
 if ($result->num_rows > 0) {
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
 
         $id = $row["ID"];
+        $sqlPicture = "SELECT * FROM Pictures WHERE Products_ID='$id' LIMIT 1";
+        $resultPicture = $conn->query($sqlPicture);
+        $rowPicture = $resultPicture->fetch_assoc();
+        
 ?>
         <div class="okvir">
         <?php
-        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a><br> Cena:" . $row["Price"] . "<br>"; //za oceno še zrovn pa sliko po možnosti
+        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a><br> Cena:" . $row["Price"] . "<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='60' width='100'>"; //za oceno še zrovn pa sliko po možnosti
         ?>
         </div>
         <?php

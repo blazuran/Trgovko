@@ -15,21 +15,26 @@ include_once "db.php";
     echo $row['Title'];
     
     $id = $row["ID"];
-    $UserID = $_SESSION['ID'];
+    $query = mysqli_query($conn, "SELECT * FROM favorites WHERE Products_ID='$id' LIMIT 1");
     
-    
-    
-    $query = mysqli_query($conn, "SELECT * FROM favorites WHERE Products_ID='$id' AND Users_ID='$UserID' LIMIT 1");
-
     if (!$query)
     {
         die('Error: ' . mysqli_error($conn));
     }
 
-    if(mysqli_num_rows($query) > 0){
-    echo "<br> Name: ". $row["Title"]. " Cena:" . $row["Price"] . " Priljubljen izdelek<br>";
-    }else{
-        echo "<br> Name: ". $row["Title"]. " Cena:" . $row["Price"] . " <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a> <br>";
+    $sqlPicture = "SELECT * FROM `Pictures` INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID='$id' LIMIT 1";
+    $resultPicture = $conn->query($sqlPicture);
+    $rowPicture = $resultPicture->fetch_assoc();
+    
+    if(isset($_SESSION['ID'])){
+        if(mysqli_num_rows($query) > 0){
+            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." Priljubljen izdelek<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='200' width='200'><br>";
+        }else{
+            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='100' width='100'> <br><br>";
+        }
+    }else
+    {
+        echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ."<img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='100' width='100'><br><br> ";
     }
     ?>
 </div>
