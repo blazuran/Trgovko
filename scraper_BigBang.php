@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
  
 
 
@@ -19,6 +20,31 @@ foreach ($html->find('div.price') as $element) {
     $cena = substr($price, 0, strpos($price, '€'));
     $pc_price[] = $cena;
     echo $cena . '<br>';
+=======
+    
+
+    include('simple_html_dom.php');
+    include_once 'db.php';
+    
+    $html = file_get_html('https://www.bigbang.si/prenosni-racunalniki/');
+    $query = mysqli_query($conn, "SELECT ID, StoreURL FROM Stores WHERE StoreURL = 'https://www.bigbang.si'");
+    $store_id = 0;
+        if(mysqli_num_rows($query) == 0)
+        {
+            $query1 = mysqli_query($conn, "INSERT into Stores(Name, StoreURL) VALUES('BigBang', 'https://www.bigbang.si')");
+            $query = mysqli_query($conn, "SELECT ID, StoreURL FROM Stores WHERE StoreURL = https://www.bigbang.si");
+            $row = mysqli_fetch_assoc($query);
+            $store_id = $row['ID'];
+        }
+        else 
+        {
+            $row = mysqli_fetch_assoc($query);
+            $store_id = $row['ID'];
+        }
+    foreach ($html->find('div.product-box') as $element) {
+     
+        $title = $element->find('h3',0)->plaintext;
+>>>>>>> 5799ec50e6dd6624494a8c63f68e0d360c58379e
     
 }
 
@@ -52,6 +78,7 @@ $store_id = 0;
         $row = mysqli_fetch_assoc($query);
         $store_id = $row['ID'];
     }
+<<<<<<< HEAD
 foreach ($html->find('div.product-box') as $element) {
     
     //$item[] =  $element->find('h3',0)->plaintext; //title
@@ -78,5 +105,7 @@ foreach ($html->find('div.product-box') as $element) {
     $query = mysqli_query($conn, $sql);
     $query2 = mysqli_query($conn, $sql_insert_image);
 }
+=======
+>>>>>>> 5799ec50e6dd6624494a8c63f68e0d360c58379e
 
 ?>
