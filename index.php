@@ -67,7 +67,8 @@ if ($result->num_rows > 0) {
  * Koliko izdelkov na strani? na prvi strani max 6 izdelkov ?
  */
 ?>
-    </div>
+
+</div>
 <?php 
 include "footer.html"; 
 ?>
