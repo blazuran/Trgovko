@@ -73,8 +73,10 @@ foreach ($html->find('div.product-box') as $element) {
     $date = date("Y-m-d H:i:s");
     
     $sql = "INSERT INTO Products(Title, ProductURL, Price, DateTime, Rating, Stores_ID, Categories_ID) VALUES('$title', '$url', $priceToInsert, '$date', 0, $store_id, 1)";
-    echo "<br>".$sql."<br>";
+    $sql_insert_image = "INSERT INTO pictures(url, Title, Products_ID) VALUES('$img', '$title', (SELECT ID FROM products WHERE ProductURL = '$url'))";
+    echo "<br>".$sql."<br>".$sql_insert_image;
     $query = mysqli_query($conn, $sql);
+    $query2 = mysqli_query($conn, $sql_insert_image);
 }
 
 ?>

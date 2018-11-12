@@ -7,7 +7,7 @@ include_once "db.php";
     <?php
     $id =$_GET['id'];
     //Remove LIMIT 1 to show/do this to all results.
-    $sql = 'SELECT * FROM `products` WHERE `ID` = '.$id.' LIMIT 1';
+    $sql = 'SELECT * FROM products WHERE ID = '.$id.' LIMIT 1';
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
 
@@ -22,7 +22,7 @@ include_once "db.php";
         die('Error: ' . mysqli_error($conn));
     }
 
-    $sqlPicture = "SELECT * FROM `Pictures` INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID='$id' LIMIT 1";
+    $sqlPicture = "SELECT * FROM Pictures INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID=$id LIMIT 1";
     $resultPicture = $conn->query($sqlPicture);
     $rowPicture = $resultPicture->fetch_assoc();
     
