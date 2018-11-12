@@ -1,14 +1,8 @@
 <?php
 include_once "session.php";
-<<<<<<< HEAD
-include_once 'db.php';
-$sql  = "SELECT DateTime FROM Products WHERE ID = 1";
-=======
 include 'db.php';
-
 include 'scraper_BigBang.php';
 $sql  = "SELECT DateTime FROM Products LIMIT 1";
->>>>>>> 5799ec50e6dd6624494a8c63f68e0d360c58379e
 $query = mysqli_query($conn, $sql);
 if(mysqli_num_rows($query) == 1)
 {
@@ -16,11 +10,7 @@ if(mysqli_num_rows($query) == 1)
    $timeFromDB = strtotime($row['DateTime']);
    if(time()-$timeFromDB >= 43200 )
    {
-<<<<<<< HEAD
-      //klic webscraperju, ko pride user na spletno stran 
-=======
        include_once 'scraper_BigBang.php';
->>>>>>> 5799ec50e6dd6624494a8c63f68e0d360c58379e
    }
 }
 ?>
