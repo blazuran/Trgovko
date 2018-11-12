@@ -22,20 +22,29 @@ include_once "db.php";
         die('Error: ' . mysqli_error($conn));
     }
 
-    $sqlPicture = "SELECT * FROM Pictures INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID=$id LIMIT 1";
-    $resultPicture = $conn->query($sqlPicture);
-    $rowPicture = $resultPicture->fetch_assoc();
-    
+
     if(isset($_SESSION['ID'])){
         if(mysqli_num_rows($query) > 0){
-            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." Priljubljen izdelek<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='200' width='200'><br>";
+            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." Priljubljen izdelek<br><br>";
         }else{
-            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='100' width='100'> <br><br>";
+            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a> <br><br>";
         }
     }else
     {
-        echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ."<img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='100' width='100'><br><br> ";
+        echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <br><br> ";
     }
+    
+        $sqlPicture = "SELECT * FROM Pictures INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID=$id ";
+    $resultPicture = $conn->query($sqlPicture);
+    
+    
+    if ($resultPicture->num_rows > 0) {
+        // nedela za slike na samo na favorites
+        while($rowPicture = $resultPicture->fetch_assoc()) {
+            echo "<img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='200' width='200'>";
+        }
+    }
+    
     ?>
 </div>
 <?php

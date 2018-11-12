@@ -1,8 +1,7 @@
 <?php
 include_once "session.php";
 include_once 'db.php';
-include 'scraper_BigBang.php';
-$sql  = "SELECT DateTime FROM Products LIMIT 1";
+$sql  = "SELECT DateTime FROM Products WHERE ID = 1";
 $query = mysqli_query($conn, $sql);
 if(mysqli_num_rows($query) == 1)
 {
@@ -10,7 +9,7 @@ if(mysqli_num_rows($query) == 1)
    $timeFromDB = strtotime($row['DateTime']);
    if(time()-$timeFromDB >= 43200 )
    {
-       scraper();
+      //klic webscraperju, ko pride user na spletno stran 
    }
 }
 ?>
