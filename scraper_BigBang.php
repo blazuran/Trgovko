@@ -1,10 +1,9 @@
 <?php
- 
-function scraper()
-{
+    
 
     include('simple_html_dom.php');
-    include_once "db.php";
+    include_once 'db.php';
+    
     $html = file_get_html('https://www.bigbang.si/prenosni-racunalniki/');
     $query = mysqli_query($conn, "SELECT ID, StoreURL FROM Stores WHERE StoreURL = 'https://www.bigbang.si'");
     $store_id = 0;
@@ -37,5 +36,5 @@ function scraper()
         $query = mysqli_query($conn, "INSERT INTO Products(Title, ProductURL, Price, DateTime, Rating, Stores_ID, Categories_ID) VALUES('$title', '$url', $priceToInsert, '$date', 0, $store_id, 1)");
         $query2 = mysqli_query($conn, "INSERT INTO pictures(url, Title, Products_ID) VALUES('$img', '$title', (SELECT ID FROM products WHERE ProductURL = '$url'))");
     }
-}
+
 ?>
