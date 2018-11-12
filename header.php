@@ -6,7 +6,7 @@ $query = mysqli_query($conn, $sql);
 if(mysqli_num_rows($query) == 1)
 {
    $row = mysqli_fetch_assoc($query);
-   $timeFromDB = strtotime($row['DateTIme']);
+   $timeFromDB = strtotime($row['DateTime']);
    if(time()-$timeFromDB >= 43200 )
    {
       //klic webscraperju, ko pride user na spletno stran 
