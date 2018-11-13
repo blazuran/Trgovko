@@ -12,8 +12,8 @@ if(isset($_SESSION['Success']))
 }
 
 ?>
+<div class="container-login">
 <div class="bg" class="p-3 mb-2 bg-light text-dark">
-
     <div  class="login"">
     <form action="login_post.php" method="POST">
         <div class="form-group">

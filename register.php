@@ -1,6 +1,7 @@
 <?php 
 include "header.php"; 
 ?>
+<div class="container-login">
 <div class="bg" class="p-3 mb-2 bg-light text-dark">
 
     <div  class="login" ">
@@ -30,7 +31,7 @@ include "header.php";
             <button type="submit" name="reg_user" class="btn btn-outline-primary" value="Potrdi">Potrdi</button> <br>
             <a href="">Ste pozabili geslo?</a>
         </form>
-    </div>
+</div>
 </div>
 <?php
 include "footer.html"; 
