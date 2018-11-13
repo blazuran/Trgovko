@@ -1,43 +1,54 @@
-
-<?php 
-include "header.php"; 
-include_once "db.php"; 
-//okej
-?>
-<div class="bg" class="p-3 mb-2 bg-light text-dark">
-<div clss="row">
-    <div  style="font-family: 'Arial'; font-size:25px;text-align: center; padding-top:40px;">Kaj lahko danes poiscemo za vas?</div>
-</div>
-<br>
-<div clss="row">
-    <div class="col-md-3 offset-md-4">
-        <form action="results.php" method="post">
-            <table>
-                <tr>
-                    <td><input class="form-control" type="text" name="Search" placeholder="Danes iscem..." style="width:470px"></td>
-                    <td>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5px" value="Poisci">Poišči</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div> <br> <br>
-</div>
-    <hr>
-<div style="text-align: center; font-size:26pt; font-family: 'Arial'"> Najbolj popularno! <br>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-</div>
-
-    <!-- IZDELKI PRVA STRAN -->
-    <div class="container">
 <?php
+include "header.php";
+include_once "db.php";
+?>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0 bgded" style="background-image:url('../Trgovko/Slike/ozadje1.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <div class="overlay inspace-30 btmspace-30">
+        <h2 class="heading">Pozdravljeni pri Trgovku</h2>
+        <p>Veselo nakupovanje!</p>
+      </div>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn inverse" href="#">Consequat</a></li>
+          <li><a class="btn" href="#">Scelerisque</a></li>
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+    <div style="text-align: center; font-size:26pt; margin-top: 20px; font-family: 'Arial'"> Najbolj popularno! <br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </div>
+
+
+
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <ul class="nospace group center">
+
+        <?php
 /* pobrati podatke iz baze ter jih izpisati tukaj v div.
  * vsak izdelek v svojem divu, div poleg diva, 3-4 izdelki v vrsti MAX
- * začnemo z najpopularnejšimi nato vedno manj. 
+ * začnemo z najpopularnejšimi nato vedno manj.
  */
 
 //LIMIT koliko naj se jih prikaže na prvi strani
@@ -54,27 +65,36 @@ if ($result->num_rows > 0) {
         $sqlPicture = "SELECT * FROM Pictures WHERE Products_ID='$id' LIMIT 1";
         $resultPicture = $conn->query($sqlPicture);
         $rowPicture = $resultPicture->fetch_assoc();
-        
+
 ?>
-        <div class="okvir">
+        <li class="one_third first btmspace-30">
+            <article class="block inspace-30 borderedbox">
+                <h6 class="font-x1">
+
+
+
+
         <?php
-        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a><br> Cena: " . $row["Price"] . "<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='60' width='100'>"; //za oceno še zrovn pa sliko po možnosti
+        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a></h6><br> Cena: " . $row["Price"] . "€<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='60' width='100'>";
         ?>
-        </div>
+      </article>
+      </li>
+      </div>
         <?php
     }
 } else {
     echo "Ni izdelkov";
 }
-/* execute query 
- * izpis po 3/4 v vrsto. 
- * podatke dobimo urejeno PADAJOČE
- * 
- * Koliko izdelkov na strani? na prvi strani max 6 izdelkov ?
- */
 ?>
-
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
 </div>
-<?php 
-include "footer.html"; 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<?php
+include "footer.html";
 ?>
