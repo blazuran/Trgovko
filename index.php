@@ -14,7 +14,7 @@ include_once "db.php";
         <form action="results.php" method="post">
             <table>
                 <tr>
-                    <td><input class="form-control" type="text" placeholder="Danes iscem..." style="width:470px"></td>
+                    <td><input class="form-control" type="text" name="Search" placeholder="Danes iscem..." style="width:470px"></td>
                     <td>
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5px" value="Poisci">Poišči</button>
                     </td>
@@ -40,7 +40,7 @@ include_once "db.php";
  * začnemo z najpopularnejšimi nato vedno manj. 
  */
 
-
+//LIMIT koliko naj se jih prikaže na prvi strani
 $sql = "SELECT * FROM `products` ORDER BY Rating DESC limit 10";
 $result = $conn->query($sql);
 
