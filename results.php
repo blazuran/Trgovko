@@ -1,12 +1,54 @@
 <?php 
 include "header.php";
 include_once "db.php";
-
+if(isset($_POST["Search"])){
 $search_value=$_POST["Search"];
-
-$sql = "SELECT * FROM `products` WHERE Title like '%$search_value%' ORDER BY Rating DESC";
+}else{
+$search_value=$_GET["Search"];
+}
+if(isset($_GET["order"])){
+$orderby=$_GET["order"];
+$sql = "SELECT * FROM `products` WHERE Title like '%$search_value%' ORDER BY $orderby;";
+}else{
+$sql = "SELECT * FROM `products` WHERE Title like '%$search_value%' ORDER BY products.Rating DESC";
+}
 $result = $conn->query($sql);
+?>
+<div class="bg" class="p-3 mb-2 bg-light text-dark">
+<div clss="row">
+    <div  style="font-family: 'Arial'; font-size:25px;text-align: center; padding-top:40px;">Kaj lahko danes poiscemo za vas?</div>
+</div>
+<br>
+<div clss="row">
+    <div class="col-md-3 offset-md-4">
+        <form action="results.php" method="post">
+            <table>
+                <tr>
+                    <td><input class="form-control" type="text" name="Search" placeholder="Danes iscem..." style="width:470px"></td>
+                    <td>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5px" value="Poisci">Poišči</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div> <br> <br>
+</div>
 
+<form action="orderByResults.php?">
+    <input type="hidden" name="Search" value="<?php echo $search_value; ?>" /> 
+    <select name="order" onchange="this.form.submit()">
+      <option value="Rating DESC">Ocena</option>
+      <option value="Price ASC">Cena (najnižja najprej)</option>
+      <option value="Price DESC">Cena (najvišja najprej)</option>
+      <option value="Title ASC">Naziv izdelka (A-Z)</option>
+      <option value="Title DESC">Naziv izdelka (Z-A)</option>
+    </select>
+</form>
+    <?php
+    
+if (!$result) {
+    trigger_error('Invalid query: ' . $conn->error);
+}
 if ($result->num_rows > 0) {
     // output data of each row
 
@@ -32,6 +74,4 @@ if ($result->num_rows > 0) {
  * izpis rezultatov glede na iskalni niz.
  * Tukaj ponudimo filtre. 
 */
-echo "<div style='float: left; border:1px solid black; text-align: center; width: 15%;' >Filtri <br><br><br><br><br> </div>";
-echo "<div style='float: left; border:1px solid black; text-align: center; width: 75%;'> Izpis rezulatov <br><br><br><br><br></div>";
 include "footer.html"; ?>
