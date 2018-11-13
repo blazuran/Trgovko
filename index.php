@@ -2,6 +2,7 @@
 <?php 
 include "header.php"; 
 include_once "db.php"; 
+//okej
 ?>
 <div class="bg" class="p-3 mb-2 bg-light text-dark">
 <div clss="row">
