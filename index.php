@@ -15,8 +15,8 @@ include_once "db.php";
       </div>
       <footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn inverse" href="#">Consequat</a></li>
-          <li><a class="btn" href="#">Scelerisque</a></li>
+          <li><a class="btn inverse" href="#">Kdo smo</a></li>
+          <li><a class="btn" href="#">Naprej na nakupovanje</a></li>
         </ul>
       </footer>
     </article>
@@ -39,6 +39,7 @@ include_once "db.php";
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
+
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
@@ -69,13 +70,10 @@ if ($result->num_rows > 0) {
 ?>
         <li class="one_third first btmspace-30">
             <article class="block inspace-30 borderedbox">
-                <h6 class="font-x1">
-
-
-
+            <h6 class="font-x1">
 
         <?php
-        echo " Name: <a href='product.php?id=$id'>". $row["Title"]. "</a></h6><br> Cena: " . $row["Price"] . "€<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='60' width='100'>";
+        echo " Name:  <a href='product.php?id=$id'>". $row["Title"]. "</a></h6><br> Cena: " . $row["Price"] . "€<br><img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='60' width='100'>";
         ?>
       </article>
       </li>
