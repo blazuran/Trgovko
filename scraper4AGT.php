@@ -4,8 +4,28 @@ set_time_limit(6000000);
 require('simple_html_dom.php');
 
 $zacetni_link = 'http://www.agt.si';
+include "db.php";
 
 $html = file_get_html('http://www.agt.si/racunalniska-oprema/multimedija/index.html');
+
+$sql_check_if_store_exists = "SELECT ID FROM stores WHERE StoreURL = 'http://www.agt.si'";
+$query = mysqli_query($conn, $sql_check_if_store_exists);
+$store_id = 0;
+
+if(mysqli_num_rows($query) == 0)
+{
+    mysqli_query($conn, "INSERT INTO stores(Name,StoreURL) VALUES('agt.si','http://www.agt.si')");
+    $query_get_store_id = mysqli_query($conn, "SELECT ID from stores WHERE Name = 'agt.si'");
+    $row = mysqli_fetch_assoc($query_get_store_id);
+    $store_id = $row['ID'];
+}
+else
+{
+    $query_get_store_id = mysqli_query($conn, "SELECT ID from stores WHERE Name = 'agt.si'");
+    $row = mysqli_fetch_assoc($query_get_store_id);
+    $store_id = $row['ID'];
+}
+
 //NASLOV, CENA, IMG, LINK
 	foreach($html-> find('div.box') as $izdelek){
 	
@@ -31,6 +51,19 @@ $html = file_get_html('http://www.agt.si/racunalniska-oprema/multimedija/index.h
 	echo 'Link: ' .$zacetni_link.$linkdostrani . '<br>' . '<br>';
 	echo 'Opis: ' .$opis. '</br>';
 	
+        $priceToInsert = str_replace(",",".", substr($cena, 0, strpos($cena, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime->plaintext."','".$zacetni_link.$linkdostrani."',".$priceToInsert.", '". $date ."', '".$opis."',".$store_id.",9)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika."', '".$ime->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("multimedija_prva.txt", "a");
@@ -64,6 +97,18 @@ foreach($html2-> find('div.box') as $izdelek2){
 	echo 'Link: ' .$zacetni_link.$linkdostrani2 . '<br>' . '<br>';
 	echo 'Opis: ' .$opis2. '</br>';
 	
+        $priceToInsert = str_replace(",",".", substr($cena2, 0, strpos($cena2, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime2->plaintext."','".$zacetni_link.$linkdostrani."',".$priceToInsert.", '". $date ."', '".$opis2."',".$store_id.",9)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika2."', '".$ime2->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime2->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("multimedija_ostalo.txt", "a");
@@ -97,6 +142,19 @@ $html_nap = file_get_html('http://www.agt.si/racunalniska-oprema/napajalniki/ind
 	echo 'Link: ' .$zacetni_link.$linkdostrani_nap . '<br>' . '<br>';
 	echo 'Opis: ' .$opis_nap. '</br>';
 	
+        
+        $priceToInsert = str_replace(",",".", substr($cena_nap, 0, strpos($cena_nap, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime_nap->plaintext."','".$zacetni_link.$linkdostrani_nap."',".$priceToInsert.", '". $date ."', '".$opis_nap."',".$store_id.",8)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika_nap."', '".$ime_nap->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime_nap->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("napajalniki_prva.txt", "a");
@@ -131,6 +189,18 @@ foreach($html_nap2-> find('div.box') as $izdelek_nap2){
 	echo 'Link: ' .$zacetni_link.$linkdostrani_nap2 . '<br>' . '<br>';
 	echo 'Opis: ' .$opis_nap2. '</br>';
 	
+        $priceToInsert = str_replace(",",".", substr($cena_nap2, 0, strpos($cena_nap2, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime_nap2->plaintext."','".$zacetni_link.$linkdostrani_nap2."',".$priceToInsert.", '". $date ."', '".$opis_nap2."',".$store_id.",8)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika_nap2."', '".$ime_nap2->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime_nap2->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("napajalniki_ostalo.txt", "a");
@@ -164,6 +234,18 @@ $html_ohi = file_get_html('http://www.agt.si/racunalniska-oprema/ohisja/index.ht
 	echo 'Link: ' .$zacetni_link.$linkdostrani_ohi . '<br>' . '<br>';
 	echo 'Opis: ' .$opis_ohi. '</br>';
 	
+        $priceToInsert = str_replace(",",".", substr($cena_ohi, 0, strpos($cena_ohi, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime_ohi->plaintext."','".$zacetni_link.$linkdostrani_ohi."',".$priceToInsert.", '". $date ."', '".$opis_ohi."',".$store_id.",10)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika_ohi."', '".$ime_ohi->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime_ohi->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("ohisja_prva.txt", "a");
@@ -196,6 +278,18 @@ foreach($html_ohi2-> find('div.box') as $izdelek_ohi2){
 	echo 'Link: ' .$zacetni_link.$linkdostrani_ohi2 . '<br>' . '<br>';
 	echo 'Opis: ' .$opis_ohi2. '</br>';
 	
+        $priceToInsert = str_replace(",",".", substr($cena_ohi2, 0, strpos($cena_ohi2, "€")));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime_ohi2->plaintext."','".$zacetni_link.$linkdostrani_ohi2."',".$priceToInsert.", '". $date ."', '".$opis_ohi2."',".$store_id.",10)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$zacetni_link.$slika_ohi2."', '".$ime_ohi2->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime_ohi2->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) { 
 	
 		$datoteka = fopen("ohisja_ostalo.txt", "a");

@@ -49,7 +49,7 @@ else
 	echo 'Link: ' .$zacetni_link.$linkdostrani . '<br>' . '<br>';
 	echo 'Opis: ' .$opis. '</br>';
 	
-        $priceToInsert = str_replace(",",".", substr($cena, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena, 0, strpos($cena, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)
@@ -94,7 +94,7 @@ foreach($html2-> find('div.box') as $izdelek2){
 	echo 'Link: ' .$zacetni_link.$linkdostrani2 . '<br>' . '<br>';
 	echo 'Opis: ' .$opis2. '</br>';
 	
-        $priceToInsert = str_replace(",",".", substr($cena2, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena2, 0, strpos($cena2, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)
@@ -140,7 +140,7 @@ $html_graf = file_get_html('http://www.agt.si/racunalniska-oprema/graficnekartic
 	echo 'Opis: ' .$opis_graf. '</br>';
 	
         
-        $priceToInsert = str_replace(",",".", substr($cena_graf, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena_graf, 0, strpos($cena_graf, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)
@@ -186,7 +186,7 @@ foreach($html_graf2-> find('div.box') as $izdelek_graf2){
 	echo 'Opis: ' .$opis_graf2. '</br>';
 	
         
-        $priceToInsert = str_replace(",",".", substr($cena_graf2, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena_graf2, 0, strpos($cena_graf2, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)
@@ -231,7 +231,7 @@ $html_ram = file_get_html('http://www.agt.si/racunalniska-oprema/spomin/index.ht
 	echo 'Opis: ' .$opis_ram. '</br>';
 	
         
-        $priceToInsert = str_replace(",",".", substr($cena_ram, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena_ram, 0, strpos($cena_ram, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)
@@ -276,7 +276,7 @@ foreach($html_ram2-> find('div.box') as $izdelek_ram2){
 	echo 'Link: ' .$zacetni_link.$linkdostrani_ram2 . '<br>' . '<br>';
 	echo 'Opis: ' .$opis_ram2. '</br>';
 	
-        $priceToInsert = str_replace(",",".", substr($cena_ram2, 0, $pos));
+        $priceToInsert = str_replace(",",".", substr($cena_ram2, 0, strpos($cena_ram2, "€")));
         //echo $priceToInsert. '<br>';
         $date = date("Y-m-d H:i:s");
         if($priceToInsert == null)

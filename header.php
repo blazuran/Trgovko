@@ -1,7 +1,7 @@
 <?php
 include_once "session.php";
 include 'db.php';
-include 'scraper_BigBang.php';
+//include 'scraper_BigBang.php';
 $sql  = "SELECT DateTime FROM Products LIMIT 1";
 $query = mysqli_query($conn, $sql);
 if(mysqli_num_rows($query) == 1)
