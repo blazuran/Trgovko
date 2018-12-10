@@ -41,6 +41,9 @@ if(mysqli_num_rows($query) == 1)
           if(isset($_SESSION['Name']) && isset($_SESSION['Surname']))
           {
               echo "<li><i class='fa fa-sign-in'></i> <a href='favorites.php'>Priljubljeno</a></li>";
+              if( $_SESSION['Admin']==1){
+              echo "<li><i class='fa fa-sign-in'></i> <a href='admin.php'>Administracija</a></li>";
+              }
               echo "<li><i class='fa fa-user'></i> <a href='logout.php'>Odjava</a></li>";
           }
           else

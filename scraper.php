@@ -13,9 +13,27 @@ Izdelek: <input type="text" name="isci"><br>
 
 <?php
 require('simple_html_dom.php');
-
+include "db.php";
 $html = file_get_html('https://www.sestavi.si/index.php/items/display/244/245/telefoni');
 $html1 = $html -> find('div.view_p1');
+$sql_check_if_store_exists = "SELECT ID FROM stores WHERE StoreURL = 'https://www.sestavi.si'";
+$query = mysqli_query($conn, $sql_check_if_store_exists);
+$store_id = 0;
+
+if(mysqli_num_rows($query) == 0)
+{
+    mysqli_query($conn, "INSERT INTO stores(Name,StoreURL) VALUES('sestavi.si','https://www.sestavi.si')");
+    $query_get_store_id = mysqli_query($conn, "SELECT ID from stores WHERE Name = 'sestavi.si'");
+    $row = mysqli_fetch_assoc($query_get_store_id);
+    $store_id = $row['ID'];
+}
+else
+{
+    $query_get_store_id = mysqli_query($conn, "SELECT ID from stores WHERE Name = 'sestavi.si'");
+    $row = mysqli_fetch_assoc($query_get_store_id);
+    $store_id = $row['ID'];
+}
+
 
 foreach($html -> find('div.view_p1') as $html1){
 foreach($html1->find('div[id]') as $izdelek) {
@@ -75,8 +93,22 @@ foreach($html1->find('div[id]') as $izdelek) {
 	echo $opis . '<br>';
 	
 	echo 'Popust na spletu: ' .$popust . '<br>';
-		
-	//foreach($html->find('div.item') as $izdelek) {
+        $pos = strpos($cena_spletna, " €");
+        echo "pos: ". $pos. '<br>';
+        
+	$priceToInsert = str_replace(",",".", substr($cena_spletna, 0, $pos));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime->plaintext."','".$link->getAttribute('href')."',".$priceToInsert.", '". $date ."', '".$opis."',".$store_id.",2)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$slika."', '".$ime->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+       // echo $sql_to_insert. '<br>';
+//foreach($html->find('div.item') as $izdelek) {
 	
 		$datoteka = fopen("telefoni.txt", "a");
 		fwrite($datoteka, $ime ->plaintext . "\n" .$cena_spletna ->plaintext. "\n" .$slika ->getAttribute('src'). "\n" .$linkdostrani. "\n" .$opis . "\n");
@@ -144,6 +176,18 @@ foreach($html3->find('div.item') as $izdelek3) {
 	echo $opis . '<br>';
 	echo 'Popust na spletu: ' .$popust . '<br>';
 		
+        $priceToInsert = str_replace(",",".", substr($cena_spletna, 0, $pos));
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime->plaintext."','".$link->getAttribute('href')."',".$priceToInsert.", '". $date ."', '".$opis."',".$store_id.",3)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$slika."', '".$ime->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
+        
 	$datoteka = fopen("tablice.txt", "a");
 	fwrite($datoteka, $ime ->plaintext . "\n" .$cena_spletna ->plaintext. "\n" .$slika ->getAttribute('src'). "\n" .$linkdostrani. "\n" .$opis . "\n");
 	fclose($datoteka);
@@ -209,6 +253,18 @@ foreach($htmlM->find('div.item')as $izdelekM) {
 	
 	echo 'Popust na spletu: ' .$popust . '<br>';
 		
+        $priceToInsert = str_replace(",",".", substr($cena_spletna, 0, $pos));
+        //echo $priceToInsert. '<br>';
+        $date = date("Y-m-d H:i:s");
+        if($priceToInsert == null)
+        {
+            $priceToInsert = 0;
+        }
+        $sql_to_insert = "INSERT INTO products(Title, ProductURL, Price, DateTime, Description, Stores_ID, Categories_ID) VALUES('".$ime->plaintext."','".$link->getAttribute('href')."',".$priceToInsert.", '". $date ."', '".$opis."',".$store_id.",6)";
+        $sql_insert_img = "INSERT INTO pictures(url, Title, Products_ID) VALUES('".$slika."', '".$ime->plaintext."', (SELECT ID FROM products WHERE Title  = '".$ime->plaintext."'))";
+        mysqli_query($conn, $sql_to_insert);
+        mysqli_query($conn, $sql_insert_img);
+        
 	//foreach($html->find('div.item') as $izdelek) {
 	
 		$datoteka = fopen("namizni_rac.txt", "a");
