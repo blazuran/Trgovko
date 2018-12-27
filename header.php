@@ -87,15 +87,6 @@ if(mysqli_num_rows($query) == 1)
     <nav id="mainav" class="fl_right">
       <ul class="clear">
         <li class="active"><a href="index.php">Domov</a></li>
-        <li><a class="drop" href="#">Pages</a>
-          <ul>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/full-width.html">Full Width</a></li>
-            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-          </ul>
-        </li>
       </ul>
     </nav>
     <!-- ################################################################################################ -->
