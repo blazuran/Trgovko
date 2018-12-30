@@ -48,5 +48,5 @@ include_once "db.php";
     ?>
 </div>
 <?php
-include "footer.html"; 
+include "footer.php";
 ?>

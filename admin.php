@@ -111,5 +111,5 @@ echo "</table>";
 }
 ?>
 <?php 
-include "footer.html"; 
+include "footer.php";
 ?>

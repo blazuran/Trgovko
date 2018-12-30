@@ -26,5 +26,5 @@ if(isset($_SESSION['Success']))
     </form>
     </div>
 <?php 
-include "footer.html"; 
+include "footer.php";
 ?>

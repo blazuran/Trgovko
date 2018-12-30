@@ -52,5 +52,5 @@ if ($result->num_rows > 0) {
 </main>
 </div>
 <?php 
-include "footer.html"; 
+include "footer.php";
 ?>

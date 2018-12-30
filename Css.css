@@ -49,18 +49,24 @@ input[type=password], select {
 /* ZA PRIKAZ NAJBOOLJ PRILJUBLJENIH */
 article{
     padding: 8px 16px;
-    float: left;
+
     width: auto;
     border: none;
     display: block;
     outline: 0;
+    text-align: center;
 }
 
 /* ZA PRIKAZ NAJBOOLJ PRILJUBLJENIH */
 
-
-
-
+/* FILTRI*/
+.elementi
+{
+    text-align: center;
+}
+#nakupovanje {
+    transition: all .3s ease-in-out;
+}
 
 
 
