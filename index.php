@@ -53,7 +53,7 @@ include_once "db.php";
                  */
 
                 //LIMIT koliko naj se jih prikaže na prvi strani
-                $sql = "SELECT * FROM `products` ORDER BY Rating DESC limit 10";
+                $sql = "SELECT * FROM `products` ORDER BY Rating DESC limit 6";
                 $result = $conn->query($sql);
 
 

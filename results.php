@@ -4,7 +4,7 @@ include_once "db.php";
 
 if (isset($_GET["search"])) {
     $price_min = isset($_GET["price-min"]) ? $_GET["price-min"] : 0;
-    $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 1000;
+    $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
 
     $search_value = $_GET["search_value"];
 
