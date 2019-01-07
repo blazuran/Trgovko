@@ -1,18 +1,26 @@
 <?php
 include "header.php";
 include_once "db.php";
-
-if (isset($_GET["search"])) {
+$search_value;
+$price_max = 5000;
+$price_min = 0;
+echo $_POST['search_value'].'<br>';
+    if(isset($_POST['search_value']))
+    {
+        $search_value = $_POST['search_value'];
+    }
+else if (isset($_GET["search"])) {
     $price_min = isset($_GET["price-min"]) ? $_GET["price-min"] : 0;
     $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
-
+    
     $search_value = $_GET["search_value"];
-
-    $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
-    echo $sql.'<br>';
+echo $search_value.'<br>';
+    
 } else {
     $search_value = "";
 }
+$sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+    echo $sql.'<br>';
 $result = $conn->query($sql);
 ?>
 <p class="hidden">
@@ -64,7 +72,6 @@ $result = $conn->query($sql);
     <form class="clear" action="orderByResults.php?">
         <input type="hidden" name="Search" value="<?php echo $search_value; ?>"/>
         <select name="order" onchange="this.form.submit()">
-            <option value="Rating DESC">Ocena</option>
             <option value="Price ASC">Cena (najnižja najprej)</option>
             <option value="Price DESC">Cena (najvišja najprej)</option>
             <option value="Title ASC">Naziv izdelka (A-Z)</option>
@@ -96,8 +103,8 @@ $result = $conn->query($sql);
                     <div class="block inspace-30 borderedbox">
                         <h6 class="font-x1">
                             <?php
-                            echo "Name: <a href='product.php?id=$id'>".$row["Title"]."</a><br>if($rowPicture[url]=empty(){<img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>} else <img src='../Slike/icon.png'>
-                            <br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
+                            echo "Name: <a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon.png'>";}
+                            echo "<br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                         </h6>
                     </div>
