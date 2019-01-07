@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include "header.php";
 include_once "db.php";
 
@@ -76,8 +76,8 @@ $result = $conn->query($sql);
         </select>
     </form>
                     <script>
-                    function prikazi() {
-                        var x = document.getElementById("myDIV");
+                    function prikazi(Name) {
+                        var x = document.getElementById(Name);
                         if (x.style.display === "none") {
                             x.style.display = "block";
                         } else {
@@ -97,8 +97,8 @@ $result = $conn->query($sql);
             // output data of each row
 
             while ($rowStores = $resultStores->fetch_assoc()) {
-
-                echo $rowStores["Name"]."<button onclick='prikazi()'>Prikazi</button><div id='myDIV'>";
+            $StoreName=$rowStores["Name"];
+                echo $rowStores["Name"]."<button onclick='prikazi($StoreName)'>Prikazi</button><div id=$StoreName>";
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);
