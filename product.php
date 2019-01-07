@@ -31,31 +31,38 @@ include_once "db.php";
     {
         die('Error: ' . mysqli_error($conn));
     }
+?>
+                            <br><br><br>
+                            <?php
 
-
-    if(isset($_SESSION['ID'])){
-        if(mysqli_num_rows($query) > 0){
-            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." Priljubljen izdelek<br><br>";
-        }else{
-            echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a> <br><br>";
-        }
-    }else
-    {
-        echo "<br> Name:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] . "\n\nOpis: " . $row["Description"] ." <br><br> ";
-    }
-    
-        $sqlPicture = "SELECT * FROM Pictures INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID=$id ";
+    $sqlPicture = "SELECT * FROM Pictures INNER JOIN Products ON products.ID = Pictures.Products_ID WHERE Products_ID=$id ";
     $resultPicture = $conn->query($sqlPicture);
-    
-    
+
+
     if ($resultPicture->num_rows > 0) {
         // nedela za slike na samo na favorites
         while($rowPicture = $resultPicture->fetch_assoc()) {
             echo "<img src=". $rowPicture["url"] ." alt=". $rowPicture["Title"] ." height='200' width='200'>";
         }
     }
+
+    echo "<br><br>Najceneje:" . "<h5><b>". $row["Price"]."€</b></h5>" ;
+
+
+    if(isset($_SESSION['ID'])){
+        if(mysqli_num_rows($query) > 0){
+            echo "<br> Link:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"] ." Priljubljen izdelek<br><br>";
+        }else{
+            echo "<br> Link:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a>  Cena:" . $row["Price"]." <a href='addfavorite.php?id=$id'>Dodaj med priljubljene.</a> <br><br>";
+        }
+    }else
+    {
+        echo "<br> Link:<a href=". $row["ProductURL"] .">". $row["Title"]. "</a><br><br> ";
+    }
     
-    ?>
+       ?>
+    <br><br>
+
     </div>
 </article> </li>
 </ul>

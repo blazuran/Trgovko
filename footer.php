@@ -41,11 +41,13 @@
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <!-- IE9 Placeholder Support -->
 <script src="layout/scripts/jquery.placeholder.min.js"></script>
+
+
 <!-- / IE9 Placeholder Support -->
 
 <script>
     var slider_min = document.querySelector("#price-min");
-    var output=document.getElementById("cenanizja");
+    var output=document.getElementById("demo");
     output.innerHTML = slider_min.value;
     slider_min.oninput = function() {
         output.innerHTML=this.value;
