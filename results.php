@@ -4,7 +4,7 @@ include_once "db.php";
 $search_value;
 $price_max = 5000;
 $price_min = 0;
-$sql;
+//$sql;
     if(isset($_POST['search_value']))
     {
         $search_value = $_POST['search_value'];
@@ -25,15 +25,22 @@ $sql;
     }
     if(isset($_GET['arr']))
     {
-         $sql = "SELECT * FROM `products` INNER JOIN categories ON products.Categories_ID = categories.ID WHERE products.Title LIKE '%".$search_value."%' AND products.Price <= ".$price_max." AND products.Price >= ".$price_min."";
+         $sql = "SELECT * FROM products INNER JOIN categories ON products.Categories_ID = categories.ID WHERE products.Title LIKE '%".$search_value."%' AND products.Price <= ".$price_max." AND products.Price >= ".$price_min." AND (";
          foreach($_GET['arr'] as $val)
          {
-            $sql = $sql . " AND categories.Title = '$val'";
+             if(count($_GET['arr']) > 1)
+             {
+                 $sql = $sql . " categories.Title = '$val' OR ";
+             }
+             else
+             {
+                 $sql = $sql . " categories.Title = '$val'";
+             }
          }
-         $sql = $sql . ";";
+         $sql = $sql . ");";
     }
-echo $sql."<br>";
-$result = $conn->query($sql);
+    echo $sql."<br>";
+$result = mysqli_query($conn, $sql)
 ?>
 <p class="hidden">
 <div class="wrapper row3">
@@ -65,14 +72,13 @@ $result = $conn->query($sql);
                     <?php 
                     $sql_get_cats = "SELECT * FROM categories";
                     
-                    $result = $conn->query($sql_get_cats);
-                    if ($result->num_rows > 0) 
+                    $result = mysqli_query($conn, $sql_get_cats);
+                    if (mysqli_num_rows($result) > 0) 
                     {
-                        while ($row = $result->fetch_assoc())
+                        while ($row = mysqli_fetch_assoc($result))
                         {
                            echo "<input type='checkbox' name='arr[]' value='".$row['Title']."'>".$row['Title'].""; 
                         }
-                        echo "<br><br>";
                     }
                     
                     
