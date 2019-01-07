@@ -14,10 +14,6 @@ include_once "db.php";
                     <p>Veselo nakupovanje!</p>
                 </div>
                 <footer>
-                    <ul class="nospace inline pushright">
-                        <li><a class="btn inverse" href="#">Kdo smo</a></li>
-                        <li><a class="btn" href="#nakupovanje">Naprej na nakupovanje</a></li>
-                    </ul>
                 </footer>
             </article>
             <!-- ################################################################################################ -->
@@ -27,7 +23,7 @@ include_once "db.php";
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <div id="nakupovanje" style="text-align: center; font-size:26pt; margin-top: 20px; font-family: 'Arial'"> Najbolj
-        popularno! <br><br>
+        popularno! <br>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>

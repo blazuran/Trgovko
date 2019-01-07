@@ -2,7 +2,17 @@
 include "header.php"; 
 include_once "db.php";
 ?>
-<div class="bg" class="p-3 mb-2 bg-light text-dark">
+
+
+    <div class="wrapper row3">
+
+        <main class="hoc container clear">
+
+            <ul class="nospace group center">
+                <h6 style="position:center;">Trgovanje</h6>
+                <li class="quarter first btmspace-30">
+                    <article class="block inspace-30 borderedbox">
+                        <h6 class="font-x1">
 
     <?php
     $id =$_GET['id'];
@@ -46,6 +56,11 @@ include_once "db.php";
     }
     
     ?>
+    </div>
+</article> </li>
+</ul>
+<div class="clear"></div>
+</main>
 </div>
 <?php
 include "footer.php";
