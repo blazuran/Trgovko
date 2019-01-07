@@ -61,17 +61,22 @@ $result = mysqli_query($conn, $sql)
             </div>
             <!--STRANSKO ISKANJE -->
             <!--STRANSKA CENA-->
-            <h1> FILTRI</h1>
-
+            <h1><b> FILTRI</b></h1>
+            <div class="dropdown">
                 <div data-role="rangeslider">
-                    <h6>Cena:</h6>
+                    <h6>Cena...</h6>
+                    <div class="dropdown-content">
                     <label for="price-min">Min:<span id="demo"></span></p></label>
                     <input type="range" name="price-min" id="price-min" value="<?= isset($_GET["price-min"]) ? $_GET["price-min"] : 0; ?>" min="0" max="5000">
                     <label for="price-max">Max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
                 </div>
-                <div>
-                    Kategorije:
+</div>
+</div>
+<br>
+                <div class="dropdown">
+                    <h6> Kategorije...</h6>
+                    <div class="dropdown-content">
                     <?php 
                     $sql_get_cats = "SELECT * FROM categories";
                     
@@ -87,6 +92,8 @@ $result = mysqli_query($conn, $sql)
                     
                     ?>
                 </div>
+                </div>
+<br>
                 <input class="btn" type="submit" data-inline="true" name="search" value="Potrdi">
 
             <!--STRANSKA CENA-->
