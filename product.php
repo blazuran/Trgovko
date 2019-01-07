@@ -61,14 +61,16 @@ include_once "db.php";
     }
     
        ?>
-    <br><br>
-
     </div>
+
 </article> </li>
 </ul>
+
 <div class="clear"></div>
 </main>
+
 </div>
+
 <?php
 include "footer.php";
 ?>
