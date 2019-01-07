@@ -22,6 +22,7 @@ include "header.php";
         </form>
 </div>
 </div>
+<br><br>
 <?php
 include "footer.php";
 ?>

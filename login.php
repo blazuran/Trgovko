@@ -24,7 +24,9 @@ if(isset($_SESSION['Success']))
         <button type="submit" class="btn" value="Potrdi">Potrdi</button> <br><br>
         <a href="">Ste pozabili geslo?</a>
     </form>
+
     </div>
+<br><br>
 <?php 
 include "footer.php";
 ?>
