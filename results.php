@@ -16,21 +16,23 @@ $price_min = 0;
     $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
     
     $search_value = $_GET["search_value"];
-     $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
     } 
     if(!isset($_POST['search_value']) && !isset($_GET["search"]))
     {
     $search_value = "";
-     $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
     }
     if(isset($_GET['arr']))
     {
-         $sql = "SELECT * FROM products INNER JOIN categories ON products.Categories_ID = categories.ID WHERE products.Title LIKE '%".$search_value."%' AND products.Price <= ".$price_max." AND products.Price >= ".$price_min." AND (";
+        $cnt = count($_GET['arr']);
+         $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM products INNER JOIN categories ON products.Categories_ID = categories.ID WHERE products.Title LIKE '%".$search_value."%' AND products.Price <= ".$price_max." AND products.Price >= ".$price_min." AND (";
          foreach($_GET['arr'] as $val)
          {
-             if(count($_GET['arr']) > 1)
+             if( $cnt > 1)
              {
-                 $sql = $sql . " categories.Title = '$val' OR ";
+                 $sql = $sql . " categories.Title = '$val' OR";
+                 $cnt--;
              }
              else
              {
@@ -72,12 +74,12 @@ $result = mysqli_query($conn, $sql)
                     <?php 
                     $sql_get_cats = "SELECT * FROM categories";
                     
-                    $result = mysqli_query($conn, $sql_get_cats);
-                    if (mysqli_num_rows($result) > 0) 
+                    $result1 = mysqli_query($conn, $sql_get_cats);
+                    if (mysqli_num_rows($result1) > 0) 
                     {
-                        while ($row = mysqli_fetch_assoc($result))
+                        while ($row1 = mysqli_fetch_assoc($result1))
                         {
-                           echo "<input type='checkbox' name='arr[]' value='".$row['Title']."'>".$row['Title'].""; 
+                           echo "<input type='checkbox' name='arr[]' value='".$row1['Title']."'>".$row1['Title'].""; 
                         }
                     }
                     
@@ -139,7 +141,7 @@ $result = mysqli_query($conn, $sql)
                     <div class="block inspace-30 borderedbox">
                         <h6 class="font-x1">
                             <?php
-                            echo " <a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon3.png'>";}
+                            echo " <a href='product.php?id=$id'>".$row['produkt']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon3.png'>";}
                             echo "<br> Najceneje: " ."<h5><b>". $row["Price"]."€</b></h5>" . "</article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                         </h6>
