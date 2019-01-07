@@ -45,7 +45,7 @@
 
 <script>
     var slider_min = document.querySelector("#price-min");
-    var output=document.getElementById("demo");
+    var output=document.getElementById("cenanizja");
     output.innerHTML = slider_min.value;
     slider_min.oninput = function() {
         output.innerHTML=this.value;

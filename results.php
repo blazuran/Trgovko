@@ -43,7 +43,7 @@ $result = $conn->query($sql);
             <h1> FILTRI</h1>
 
                 <div data-role="rangeslider">
-                    <label for="price-min">Cena-min:<span id="demo"></span></p></label>
+                    <label for="price-min">Cena-min:<span id="cenanizja"></span></p></label>
                     <input type="range" name="price-min" id="price-min" value="<?= isset($_GET["price-min"]) ? $_GET["price-min"] : 0; ?>" min="0" max="5000">
                     <label for="price-max">Cena-max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
