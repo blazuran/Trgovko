@@ -4,7 +4,6 @@ include_once "db.php";
 $search_value;
 $price_max = 5000;
 $price_min = 0;
-echo $_POST['search_value'].'<br>';
     if(isset($_POST['search_value']))
     {
         $search_value = $_POST['search_value'];
@@ -20,7 +19,6 @@ echo $search_value.'<br>';
     $search_value = "";
 }
 $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
-    echo $sql.'<br>';
 $result = $conn->query($sql);
 ?>
 <p class="hidden">
