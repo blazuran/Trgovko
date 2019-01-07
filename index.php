@@ -72,8 +72,8 @@ include_once "db.php";
                             <div class="block inspace-30 borderedbox">
                                 <h6 class="font-x1">
                                     <?php
-                                    echo "Name: <a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon.png'>";}
-                            echo "<br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
+                                    echo "<a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']. "height=0 width=0>";} else{echo  "<img src='../Trgovko/Slike/icon.png'>";}
+                            echo "<br> Cena: " ."<h5>". $row["Price"]."€</h5>" . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                                 </h6>
                             </div>
