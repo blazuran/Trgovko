@@ -55,7 +55,7 @@ $result = $conn->query($sql);
             <h1> FILTRI</h1>
 
                 <div data-role="rangeslider">
-                    <label for="price-min">Cena-min:<span id="cenanizja"></span></p></label>
+                    <label for="price-min">Cena-min:<span id="demo"></span></p></label>
                     <input type="range" name="price-min" id="price-min" value="<?= isset($_GET["price-min"]) ? $_GET["price-min"] : 0; ?>" min="0" max="5000">
                     <label for="price-max">Cena-max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
@@ -133,8 +133,8 @@ $result = $conn->query($sql);
                     <div class="block inspace-30 borderedbox">
                         <h6 class="font-x1">
                             <?php
-                            echo "Name: <a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon.png'>";}
-                            echo "<br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
+                            echo " <a href='product.php?id=$id'>".$row['Title']."</a><br>"; if(isset($rowPicture['url'])){echo "<img src=".$rowPicture['url']." alt=".$rowPicture['Title']." height='60' width='100'>";} else{echo  "<img src='../Trgovko/Slike/icon3.png'>";}
+                            echo "<br> Najceneje: " ."<h5><b>". $row["Price"]."€</b></h5>" . "</article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                         </h6>
                     </div>
