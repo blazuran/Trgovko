@@ -9,6 +9,7 @@ if (isset($_GET["search"])) {
     $search_value = $_GET["search_value"];
 
     $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+    echo $sql.'<br>';
 } else {
     $search_value = "";
 }
@@ -95,7 +96,7 @@ $result = $conn->query($sql);
                     <div class="block inspace-30 borderedbox">
                         <h6 class="font-x1">
                             <?php
-                            echo " Name: <a href='product.php?id=$id'>" . $row["Title"] . "</a><br>if($rowPicture[url]=empty(){<img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>} else <img src="../Slike/icon.png">
+                            echo "Name: <a href='product.php?id=$id'>".$row["Title"]."</a><br>if($rowPicture[url]=empty(){<img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>} else <img src='../Slike/icon.png'>
                             <br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                         </h6>
