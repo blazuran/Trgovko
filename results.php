@@ -4,21 +4,35 @@ include_once "db.php";
 $search_value;
 $price_max = 5000;
 $price_min = 0;
+$sql;
     if(isset($_POST['search_value']))
     {
         $search_value = $_POST['search_value'];
+        $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
     }
-else if (isset($_GET["search"])) {
+    if (isset($_GET["search"])) 
+    {
     $price_min = isset($_GET["price-min"]) ? $_GET["price-min"] : 0;
     $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
     
     $search_value = $_GET["search_value"];
-echo $search_value.'<br>';
-    
-} else {
+     $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+    } 
+    if(!isset($_POST['search_value']) && !isset($_GET["search"]))
+    {
     $search_value = "";
-}
-$sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+     $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+    }
+    if(isset($_GET['arr']))
+    {
+         $sql = "SELECT * FROM `products` INNER JOIN categories ON products.Categories_ID = categories.ID WHERE products.Title LIKE '%".$search_value."%' AND products.Price <= ".$price_max." AND products.Price >= ".$price_min."";
+         foreach($_GET['arr'] as $val)
+         {
+            $sql = $sql . " AND categories.Title = '$val'";
+         }
+         $sql = $sql . ";";
+    }
+echo $sql."<br>";
 $result = $conn->query($sql);
 ?>
 <p class="hidden">
@@ -45,6 +59,24 @@ $result = $conn->query($sql);
                     <input type="range" name="price-min" id="price-min" value="<?= isset($_GET["price-min"]) ? $_GET["price-min"] : 0; ?>" min="0" max="5000">
                     <label for="price-max">Cena-max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
+                </div>
+                <div>
+                    Kategorije:
+                    <?php 
+                    $sql_get_cats = "SELECT * FROM categories";
+                    
+                    $result = $conn->query($sql_get_cats);
+                    if ($result->num_rows > 0) 
+                    {
+                        while ($row = $result->fetch_assoc())
+                        {
+                           echo "<input type='checkbox' name='arr[]' value='".$row['Title']."'>".$row['Title'].""; 
+                        }
+                        echo "<br><br>";
+                    }
+                    
+                    
+                    ?>
                 </div>
                 <input class="btn" type="submit" data-inline="true" name="search" value="Potrdi">
 
