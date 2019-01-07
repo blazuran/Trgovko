@@ -1,7 +1,7 @@
 <?php
 
 include('simple_html_dom.php');
-
+include "db.php";
 /*
  * KATEGORIJA: prenosniki
  */
@@ -15,16 +15,31 @@ for ($i = 1; $i < 40; $i++) {
         break;
     }
 
+    $query = mysqli_query($conn, "SELECT ID, StoreURL FROM Stores WHERE StoreURL = 'https://www.bigbang.si'");
+    $store_id = 0;
+        if(mysqli_num_rows($query) == 0)
+        {
+            $query1 = mysqli_query($conn, "INSERT into Stores(Name, StoreURL) VALUES('BigBang', 'https://www.bigbang.si')");
+            $query = mysqli_query($conn, "SELECT ID, StoreURL FROM Stores WHERE StoreURL = https://www.bigbang.si");
+            $row = mysqli_fetch_assoc($query);
+            $store_id = $row['ID'];
+        }
+        else 
+        {
+            $row = mysqli_fetch_assoc($query);
+            $store_id = $row['ID'];
+        }
+    
     foreach ($html->find('div.product-box') as $element) {
 
         $item[] = $element->find('h3', 0)->plaintext; //title
-
+        $title = $element->find('h3', 0)->plaintext; 
         $link = "https://www.bigbang.si";
         $linkDesc = $link . $element->find('h3 a', 0)->href; //url
 
         $htmlDesc = file_get_html($linkDesc);
         $item[] = $htmlDesc->find('div.productDescription p', 0)->plaintext; //description 
-
+        $description = $htmlDesc->find('div.productDescription p', 0)->plaintext;
         $price = $element->find('div.price', 0)->plaintext; //price 
         $price1 = explode("€", $price);
         if (strpos($price1[1], '20x') !== false) {
@@ -37,10 +52,16 @@ for ($i = 1; $i < 40; $i++) {
             }
         }
         $item[] = $priceNew . '€ ';
-
+        $priceNew = str_replace(",", ".", $priceNew);
         $item[] = $linkDesc; //url
 
         $item[] = $element->find('div.productImage span.imgWrap img', 0)->src; //picture
+        $img = $element->find('div.productImage span.imgWrap img', 0)->src;
+        $date = date("Y-m-d H:i:s");        
+        echo $img."<br>";
+        $query = mysqli_query($conn, "INSERT INTO Products(Title, ProductURL, Price, DateTime, Description,Rating, Stores_ID, Categories_ID) VALUES('$title', '$linkDesc', $priceNew, '$date', '$description', 0, $store_id, 1)");
+        $query2 = mysqli_query($conn, "INSERT INTO pictures(url, Title, Products_ID) VALUES('$img', '$title', (SELECT ID FROM products WHERE ProductURL = '$linkDesc'))");
+
     }
 }
 
@@ -64,21 +85,26 @@ for ($i = 1; $i < 40; $i++) {
     foreach ($html->find('div.product-box') as $element) {
 
         $itemPhone[] = $element->find('h3', 0)->plaintext; //title
-
+        $title = $element->find('h3', 0)->plaintext;
         $link = "https://www.bigbang.si";
         $linkDesc = $link . $element->find('h3 a', 0)->href; //url
 
         $htmlDesc = file_get_html($linkDesc);
         $itemPhone[] = $htmlDesc->find('div.productDescription p', 0)->plaintext; //description 
-
+        $descr = $htmlDesc->find('div.productDescription p', 0)->plaintext;
         $price = $element->find('div.price', 0)->plaintext; //price  
         $price1 = substr($price, 0, strpos($price, ' €'));
-
+        $price1 = str_replace(",", ".", $price1);
         $itemPhone[] = $price1 . '€ ';
 
         $itemPhone[] = $linkDesc; //url
 
         $itemPhone[] = $element->find('div.productImage span.imgWrap img', 0)->src; //picture
+        $img = $element->find('div.productImage span.imgWrap img', 0)->src;
+        $date = date("Y-m-d H:i:s");
+        $query = mysqli_query($conn, "INSERT INTO Products(Title, ProductURL, Price, DateTime, Description,Rating, Stores_ID, Categories_ID) VALUES('$title', '$linkDesc', $price1, '$date', '$description', 0, $store_id, 2)");
+        $query2 = mysqli_query($conn, "INSERT INTO pictures(url, Title, Products_ID) VALUES('$img', '$title', (SELECT ID FROM products WHERE ProductURL = '$linkDesc'))");
+
     }
 }
 
