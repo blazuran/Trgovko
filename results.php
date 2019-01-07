@@ -1,18 +1,26 @@
 <?php
 include "header.php";
 include_once "db.php";
-
-if (isset($_GET["search"])) {
+$search_value;
+$price_max = 5000;
+$price_min = 0;
+echo $_POST['search_value'].'<br>';
+    if(isset($_POST['search_value']))
+    {
+        $search_value = $_POST['search_value'];
+    }
+else if (isset($_GET["search"])) {
     $price_min = isset($_GET["price-min"]) ? $_GET["price-min"] : 0;
     $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
-
+    
     $search_value = $_GET["search_value"];
-
-    $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
-    echo $sql.'<br>';
+echo $search_value.'<br>';
+    
 } else {
     $search_value = "";
 }
+$sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+    echo $sql.'<br>';
 $result = $conn->query($sql);
 ?>
 <p class="hidden">
