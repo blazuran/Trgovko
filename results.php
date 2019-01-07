@@ -39,7 +39,7 @@ $result = $conn->query($sql);
                     <label for="price-max">Cena-max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
                 </div>
-                <input class="btn inverse" type="submit" data-inline="true" name="search" value="Potrdi">
+                <input class="btn" type="submit" data-inline="true" name="search" value="Potrdi">
 
             <!--STRANSKA CENA-->
 
@@ -95,7 +95,8 @@ $result = $conn->query($sql);
                     <div class="block inspace-30 borderedbox">
                         <h6 class="font-x1">
                             <?php
-                            echo " Name: <a href='product.php?id=$id'>" . $row["Title"] . "</a><br><img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'><br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
+                            echo " Name: <a href='product.php?id=$id'>" . $row["Title"] . "</a><br>if($rowPicture[url]=empty(){<img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>} else <img src="../Slike/icon.png">
+                            <br> Cena: " . $row["Price"] . " </article> </li>"; //za oceno še zrovn pa sliko po možnosti
                             ?>
                         </h6>
                     </div>

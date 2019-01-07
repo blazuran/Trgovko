@@ -71,7 +71,7 @@ if(mysqli_num_rows($query) == 1)
       <form class="clear" method="post" action="results.php">
         <fieldset>
           <legend>Search:</legend>
-          <input type="search" value="" name="Search" placeholder="Išči tukaj&hellip;">
+          <input type="search" value="" name="search_value" placeholder="Išči tukaj&hellip;">
           <button class="fa fa-search" type="submit" title="Search"><em>Iskanje</em></button>
         </fieldset>
       </form>
