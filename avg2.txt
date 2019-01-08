@@ -1,0 +1,669 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Monitorji :: AGT Trgovina d.o.o.</title>
+	<meta name="robots" content="index,follow">
+	<link type="text/css" media="print" href="/elements/print.css" rel="stylesheet">
+	<link type="text/css" href="/elements/default.css" rel="stylesheet">
+	<link href="/rss/" rel="alternate" type="application/rss+xml" title="AGT Trgovina d.o.o. - novičke">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/scripts/js/prototype.js"></script>
+	<script type="text/javascript" src="/scripts/js/scriptaculous.js?load=effects"></script><script type="text/javascript" src="http://www.agt.si/scripts/js/effects.js"></script>
+	<script type="text/javascript" src="/scripts/js/lightbox.js"></script>
+	<script type="text/javascript" src="/localscripts/overlib.js"></script>
+	<script type="text/javascript" src="/localscripts/external.js"></script>
+	<script type="text/javascript" src="/elements/cookie.js"></script>
+	<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-41705327-4',{'storage':'none','clientId':'e0d78d00ffe146269fc51b42304a0b08'});ga('send','pageview',{'anonymizeIp':true});</script>
+	<meta name="google-site-verification" content="hkzHUsdtyK12CZVX5dnQIg1Kv9WMPf9cjJ9jPWmYHRE">
+	<script type="text/javascript">var xajaxRequestUri="http://www.agt.si/racunalniska-oprema/monitorji/index.html";var xajaxDebug=false;var xajaxStatusMessages=false;var xajaxWaitCursor=true;var xajaxDefinedGet=0;var xajaxDefinedPost=1;var xajaxLoaded=false;</script><script type="text/javascript" src="/scripts/xajax.js"></script><script type="text/javascript">window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: /scripts/xajax.js'); } }, 6000);</script>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+                <div id="logo"><a href="/"><img src="/elements/pics/logo.gif" alt="AGT d.o.o."></a></div>
+                <div id="menu_header">
+                        <div class="menu_header_item"><a href="/podjetje.html">O podjetju</a></div>
+                        <div class="menu_header_item"><a href="/servis-racunalnikov.html">Servis</a></div>
+                        <div class="menu_header_item"><a href="/splosni.html">Splošni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/placilni.html">Plačilni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/karta.html">Kje smo</a></div>
+                        <div class="menu_header_item"><a href="/vroca-ponudba/" style="color:#BCED49">Vroča ponudba</a></div>
+                </div>
+                <div id="header_cart">
+                                                        <b>Neprijavljen</b> - <a href="/auth/login.html">prijava</a><br>
+                                <a href="/auth/forgot.html">Pozabljeno geslo?</a>			
+                                                </div>
+                <div style="clear:both"></div>
+        </div>
+	<div>
+		<div id="menu">
+			<div class="menu-head">
+				Računalniška oprema		
+			</div>
+			<div class="menu-main">
+                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/barebone-sistemi/" class="linklvl1">Barebone</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/graficnekartice/" class="linklvl1">Grafične kartice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/maticneplosce/" class="linklvl1">Matične plošče</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/miske/" class="linklvl1">Miške</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/monitorji/" class="linklvl1"><span class="active">Monitorji</span></a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/mrezna-oprema/" class="linklvl1">Mrežna oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/multimedija/" class="linklvl1">Multimedija</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/napajalniki/" class="linklvl1">Napajalniki</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/ohisja/" class="linklvl1">Ohišja</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/opticneenote/" class="linklvl1">Optične enote</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/osebni/" class="linklvl1">Računalniki-Namizni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/prenosniracunalniki/" class="linklvl1">Računalniki-Prenosni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/procesorji/" class="linklvl1">Procesorji</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/programska-oprema/" class="linklvl1">Programska oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/rabljena-oprema/" class="linklvl1">Rabljena oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/razno/" class="linklvl1">Razno</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/spomin/" class="linklvl1">Spomin</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/tipkovnice/" class="linklvl1">Tipkovnice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/trdidiski/" class="linklvl1">Trdi diski</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/zracnahlajenja/" class="linklvl1">Hlajenje</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                			</div>
+			<div class="menu-foot"></div>
+			<br>
+			
+			<div id="nomad"><a href="/sestavi/" class="sestavi"></a></div>
+            <div class="menu-head"></div>
+			<div class="menu-main" style="line-height: 40px;padding:0px 10px 0 15px">
+                <a href="http://www.facebook.com/agt.si"><img src="/elements/buttons/fb.gif" align="absmiddle">&nbsp;&nbsp;AGT na Facebooku</a>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head">
+				Legenda		
+			</div>
+			<div class="menu-main">
+				<table cellspacing="0" cellpadding="0">
+					<tbody><tr>
+						<td align="center"><img src="/elements/pics/agt_s.gif" width="20" alt="AGT priporoča"></td>
+						<td>&nbsp;AGT priporoča</td>
+					</tr>
+					<tr>
+						<td align="center"><img src="/elements/pics/vroce_s.gif" width="20" alt="Vroča cena"></td>
+						<td>&nbsp;Vroča cena</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/novo_s.gif" width="20" alt="Novost"></td>
+						<td>&nbsp;Novost</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/masa_s.gif" width="20" alt="Brez poštnine"></td>
+						<td>&nbsp;Brez poštnine</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div style="text-align:center"><a href="http://www.companywall.biz" target="_blank" class="nohover"><img src="http://www.companywall.si/image/bonitet?id=1576&amp;type=2&amp;y=2017" alt="CompanyWall" width="162" height="162"></a></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><a href="http://www.intel.com/cd/channel/reseller/asmo-na/eng/membership/293121.htm" class="nohover"><img src="/elements/pics/intel.jpg" alt="Intel Channel Partner"></a></div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><img src="/elements/pics/recycling.jpg"><br>V našem podjetju se zavedamo, kako pomembna je skrb za čisto okolje. Zato vam omogočamo, da pri nas brezplačno pustite odsluženo računalniško opremo.<br><br><a href="/recycled.html" style="text-decoration:underline">Več o reciklaži</a></div>
+			<div class="menu-foot"></div>
+		</div>
+
+<div id="main">
+        <div id="news" style="background: url(/elements/pics/monitorji.jpg)">
+        <h1>Monitorji</h1>
+        Monitor je elektronska naprava, ki je zmožna prikazovati mirno ali gibajočo sliko, ki jo posreduje računalnik in obdela grafična kartica. Med seboj se razlikujejo po velikoski, načinu priklopa in kvaliteti slike, ki jo prikazujejo.    </div>
+    <div id="search">
+        <div class="search-head"></div>
+        <div class="search-main">
+            <form method="get" action="">
+                <table style="float:left;width:50%">
+                                                    <tbody><tr>
+                                    <td>Proizvajalec:</td>
+                                    <td>
+                                        <select name="proizvajalec">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="173">AOC</option>
+                                                                                            <option value="17">ASUS</option>
+                                                                                            <option value="161">DELL</option>
+                                                                                            <option value="218">Iiyama</option>
+                                                                                            <option value="185">LG</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Velikost:</td>
+                                    <td>
+                                        <select name="velikost">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="27">21,5" Wide</option>
+                                                                                            <option value="12">22"</option>
+                                                                                            <option value="26">23,6" Wide</option>
+                                                                                            <option value="48">23,8" Wide</option>
+                                                                                            <option value="39">23" Wide</option>
+                                                                                            <option value="23">23" Wide</option>
+                                                                                            <option value="52">24,5" Wide</option>
+                                                                                            <option value="21">24" Wide</option>
+                                                                                            <option value="45">25" Wide</option>
+                                                                                            <option value="53">27,9" Wide</option>
+                                                                                            <option value="30">27" Wide</option>
+                                                                                            <option value="43">28" Wide</option>
+                                                                                            <option value="40">29" Wide</option>
+                                                                                            <option value="22">30" Wide</option>
+                                                                                            <option value="42">34" Ultrawide</option>
+                                                                                            <option value="49">35" Ultrawide</option>
+                                                                                            <option value="54">37,5" Ultrawide</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Barva:</td>
+                                    <td>
+                                        <select name="barva">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="9">Belo-Srebrna</option>
+                                                                                            <option value="2">Črna</option>
+                                                                                            <option value="5">Črno-Srebrna</option>
+                                                                                            <option value="21">Siva</option>
+                                                                                            <option value="3">Srebrna</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Odzivni čas:</td>
+                                    <td>
+                                        <select name="cas">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="76">1</option>
+                                                                                            <option value="40">2</option>
+                                                                                            <option value="32">4</option>
+                                                                                            <option value="37">5</option>
+                                                                                            <option value="33">6</option>
+                                                                                            <option value="2">8</option>
+                                                                                            <option value="15">12</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                            </tbody></table>
+                <table style="float:left;width:50%">
+
+                                            <tbody><tr>
+                            <td>Cenovni razred</td>
+                            <td>
+                                <select name="cena">
+                                    <option value="">--- Izberi ---</option>
+                                                                            <option value="0-300">pod 300€</option>
+                                                                            <option value="300-600">od 300€ do 600€</option>
+                                                                            <option value="600-10000">nad 600€</option>
+                                                                    </select></td>
+                        </tr>
+                                        <tr>
+                        <td>Model:</td>
+                        <td><input type="text" name="ime" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Išči" class="submit"></td>
+                    </tr>
+                </tbody></table>
+            </form>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="search-foot"></div>
+    </div>
+    <div style="clear:both;"></div>
+            <div class="heading">
+                        <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (57                izdelkov)
+            </div>
+            <div class="navigator">Stran: <span class="active">&nbsp;1&nbsp;</span>:<a href="./index.2.html">&nbsp;2&nbsp;</a>:<a href="./index.3.html">&nbsp;3&nbsp;</a>:<a href="./index.4.html">&nbsp;4&nbsp;</a>:<a href="./index.5.html">&nbsp;5&nbsp;</a></div>
+        </div>
+        <div style="margin-left:15px;">
+                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">84,61€</div>
+                                    <span id="img_cart_7435"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',7435));return false;"></span>
+                                                            </div>
+                            <span class="p11">AOC</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/aoc-e2270swn.html">e2270Swn Value</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-256.jpg" rel="lightbox"><img src="/images/mn-tn-256.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">21,5" Wide<br>Črna<br>odzivnost: 5ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">107,27€</div>
+                                    <span id="img_cart_10248"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10248));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-e2216h.html">E-series E2216H</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-395.jpg" rel="lightbox"><img src="/images/mn-tn-395.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">21,5" Wide<br>Črna<br>odzivnost: 5ms</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">110,52€</div>
+                                    <span id="img_cart_10665"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10665));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-se2216h.html">S-series SE2216H</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-408.jpg" rel="lightbox"><img src="/images/mn-tn-408.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">21,5" Wide<br>Črna<br>odzivnost: 12ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">112,48€</div>
+                                    <span id="img_cart_9478"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9478));return false;"></span>
+                                                            </div>
+                            <span class="p11">ASUS</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/monitor-asus-vs228ne.html">VS228NE</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-360.jpg" rel="lightbox"><img src="/images/mn-tn-360.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">21,5" Wide<br>Črna<br>odzivnost: 5ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">119,35€</div>
+                                    <span id="img_cart_9981"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9981));return false;"></span>
+                                                            </div>
+                            <span class="p11">ASUS</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/asus-vs247nr.html">VS247NR</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-363.jpg" rel="lightbox"><img src="/images/mn-tn-363.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23,6" Wide<br>Črna<br>odzivnost: 5ms</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">126,16€</div>
+                                    <span id="img_cart_11366"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11366));return false;"></span>
+                                                            </div>
+                            <span class="p11">ASUS</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/ASUS-VS247HR-23-Full-HD-LED.html">VS247HR</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-435.jpg" rel="lightbox"><img src="/images/mn-tn-435.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23,6" Wide<br>Črna<br>odzivnost: 2ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">127,45€</div>
+                                    <span id="img_cart_10142"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10142));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-se2416h.html">S-series SE2416H</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-393.jpg" rel="lightbox"><img src="/images/mn-tn-393.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23,8" Wide<br>Črno-Srebrna<br>odzivnost: 6ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">132,48€</div>
+                                    <span id="img_cart_9414"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9414));return false;"></span>
+                                                            </div>
+                            <span class="p11">AOC</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/monitor-aoc-i2481fxh-style.html">i2481FXH Style</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-302.jpg" rel="lightbox"><img src="/images/mn-tn-302.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">24" Wide<br>Črna<br>odzivnost: 4ms</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">134,61€</div>
+                                    <span id="img_cart_10896"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10896));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-se2417hg.html">S-series SE2417HG</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-427.jpg" rel="lightbox"><img src="/images/mn-tn-427.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23,6" Wide<br>Črno-Srebrna<br>odzivnost: 2ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">138,64€</div>
+                                    <span id="img_cart_11216"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11216));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-e2417h.html">E-series E2417H</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-432.jpg" rel="lightbox"><img src="/images/mn-tn-432.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23,8" Wide<br>Črna<br>odzivnost: 8ms</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">162,60€</div>
+                                    <span id="img_cart_10250"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10250));return false;"></span>
+                                                            </div>
+                            <span class="p11">DELL</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/dell-p2317h.html">Professional P2317H</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-397.jpg" rel="lightbox"><img src="/images/mn-tn-397.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">23" Wide<br>Črna<br>odzivnost: 6ms</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">163,72€</div>
+                                    <span id="img_cart_11367"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11367));return false;"></span>
+                                                            </div>
+                            <span class="p11">ASUS</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/monitorji/asus-VS248HR.html">VS248HR</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/mn-436.jpg" rel="lightbox"><img src="/images/mn-tn-436.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">24" Wide<br>Črna<br>odzivnost: 1ms</span>
+                                                    </div>
+                            </div>
+    <div style="clear:both;padding-top:10px;"></div>
+            <div class="heading">
+            <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (57                izdelkov)
+            </div>
+            <div class="navigator">Stran: <span class="active">&nbsp;1&nbsp;</span>:<a href="./index.2.html">&nbsp;2&nbsp;</a>:<a href="./index.3.html">&nbsp;3&nbsp;</a>:<a href="./index.4.html">&nbsp;4&nbsp;</a>:<a href="./index.5.html">&nbsp;5&nbsp;</a></div>
+        </div>
+    </div>
+
+<div id="right">
+    <div class="new">
+                    <div class="new-head">
+                <a href="/shoppingcart/"><img src="/elements/pics/kos.gif" style="float:right" alt="Na košarico"></a>
+                Košarica
+                <div style="clear:both"></div>					
+            </div>				
+            <div id="small-main" class="new-main">
+                <br>
+
+                			
+                <div class="inputSmallCart">
+                    <div class="cart_price"><big><b>Skupaj</b></big></div>
+                    <div class="cart_total_price" id="cart_total_price"><big><b>0,00€</b></big></div>
+                    <div style="clear:both"></div>
+                </div>
+                <div style="clear:both"></div>
+                <br>
+                <a href="/shoppingcart/"><img src="/elements/pics/tothecart.gif" style="float:right" alt="Na košarico"></a>
+                <div style="clear:both"></div>					
+            </div>
+            <div class="new-foot"></div>
+            <br>
+                        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+            <a href="http://www.asus.com"><img src="/elements/pics/logo_agp.jpg" alt="ASUS AGP" /></a>
+        </div>
+        <div class="new-foot"></div>
+        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/skb.jpg" alt="SKB Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>	
+        -->
+        <!--
+
+        <br />
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+<a href="/placilni.html"><img src="/elements/pics/grenke.jpg" alt="Grenke" /></a>
+        </div>
+        <div class="new-foot"></div>	
+<div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/abanka.jpg" alt="A Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>
+        -->
+        <div id="compare">
+
+            <div class="new-head">
+    Primerjava
+</div>				
+<div id="small-main" class="new-main">
+    <br>
+
+    V primerjavo sta lahko vključeni le 2 komponenti iz kataloga. Če imate izbranih več, jih odstranite in poskusite znova.  
+    <br><br>
+
+    			
+    <div style="clear:both"></div>					
+</div>
+<div class="new-foot"></div>
+<br>
+
+        </div>
+        			
+                    <div class="new-head">Novosti</div>
+            <div class="new-main"><br>
+                				
+            </div>
+            <div class="new-foot"></div>
+            				
+    </div>
+</div>
+
+		<div style="clear:both"></div>
+	</div>
+<div id="footer">
+			<p style="text-align: center;padding-top:20px;"><br><br>
+			
+				<a href="http://www.3dconnexion.com/" target="_new"><img src="/images/zast-128.jpg" alt="3D Connexion"></a>
+			
+				<a href="http://www.antec.com/uk/" target="_new"><img src="/images/zast-143.jpg" alt="Antec"></a>
+			
+				<a href="http://www.aoc-europe.com/" target="_new"><img src="/images/zast-173.jpg" alt="AOC"></a>
+			
+				<a href="http://www.asus.com" target="_new"><img src="/images/zast-17.jpg" alt="ASUS"></a>
+			
+				<a href="http://www.coolermaster.com/" target="_new"><img src="/images/zast-37.jpg" alt="Cooler Master"></a>
+			
+				<a href="http://www.corsairmemory.com" target="_new"><img src="/images/zast-89.jpg" alt="Corsair"></a>
+			
+				<a href="http://www.dell.com/" target="_new"><img src="/images/zast-161.jpg" alt="DELL"></a>
+			
+				<a href="http://www.fractal-design.com/index.php?view=" target="_new"><img src="/images/zast-191.jpg" alt="Fractal Design"></a>
+			
+				<a href="http://www.giga-byte.com" target="_new"><img src="/images/zast-1.jpg" alt="Gigabyte"></a>
+			
+				<a href="http://www.iiyama-monitors.co.uk/" target="_new"><img src="/images/zast-218.jpg" alt="Iiyama"></a>
+			
+				<a href="http://www.intel.com" target="_new"><img src="/images/zast-2.jpg" alt="Intel"></a>
+			
+				<a href="http://www.lc-power.com/" target="_new"><img src="/images/zast-35.jpg" alt="LC Power"></a>
+			
+				<a href="http://www.microsoft.com/" target="_new"><img src="/images/zast-94.jpg" alt="Microsoft"></a>
+			
+				<a href="https://www.msi.com" target="_new"><img src="/images/zast-73.jpg" alt="MSI"></a>
+			
+				<a href="http://www.nec.com" target="_new"><img src="/images/zast-18.jpg" alt="NEC"></a>
+			
+				<a href="http://www.nzxt.com/" target="_new"><img src="/images/zast-82.jpg" alt="NZXT"></a>
+			
+				<a href="http://www.pny.com/" target="_new"><img src="/images/zast-50.jpg" alt="PNY"></a>
+			
+				<a href="http://www.razerzone.com/" target="_new"><img src="/images/zast-133.jpg" alt="Razer"></a>
+			
+				<a href="http://www.samsung.com/" target="_new"><img src="/images/zast-23.jpg" alt="Samsung"></a>
+			
+				<a href="http://www.sapphiretech.com/presentation/?lid=1" target="_new"><img src="/images/zast-14.jpg" alt="Sapphire"></a>
+			
+				<a href="http://www.seagate.com/" target="_new"><img src="/images/zast-26.jpg" alt="Seagate"></a>
+			
+				<a href="http://en-de.sennheiser.com/" target="_new"><img src="/images/zast-252.gif" alt="Sennheiser"></a>
+			
+				<a href="http://www.supermicro.com" target="_new"><img src="/images/zast-79.jpg" alt="Supermicro"></a>
+			
+				<a href="http://www.toshiba-europe.com/" target="_new"><img src="/images/zast-148.jpg" alt="Toshiba"></a>
+			
+				<a href="http://www.tp-link.com/en/" target="_new"><img src="/images/zast-292.jpg" alt="TP-Link"></a>
+			
+				<a href="http://www.westerndigital.com" target="_new"><img src="/images/zast-27.jpg" alt="Western Digital"></a>
+				
+			</p>
+
+
+<p align="center" style="padding-top:20px;">
+© 2006-14 AGT Trgovina d.o.o., email: <a href="mailto:trgovina@agt.si">trgovina@agt.si</a>, Powered by <a href="http://www.vpo.si" alt="Izdelava spletnih strani in optimizacija spletnih strani">VPO</a>
+</p>
+</div>
+</div>
+
+<div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="/scripts/js/images/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="/scripts/js/images/closelabel.gif"></a></div></div></div></div><div id="cookie_consent" style="position: fixed; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.701961); color: rgb(255, 255, 255); text-align: center; font-size: 1.4em; line-height: 1.5em;"><div style="position:absolute;right:0;width:20px;height:20px;line-height:20px;"><a style="color:#fff;text-decoration:none;" href="#" onclick="var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;">x</a></div><div style="padding:10px 0;margin:0 auto;width:960px;overflow:auto;"><div style="width:700px;float:left;">Naše spletno mesto uporablja piškotke za boljše delovanje in spletno analitiko. Ali se strinjate s tem, da vam nastavimo piškotke?<br><a href="http://www.pp.si/cookies.html" style="font-size:0.6em;color:#fff">Zanima me več o piškotkih</a></div><div style="width:260px;float:right;text-align:center;"><a href="#" onclick="document.cookie='c_consent=true;path=/';var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;" style="display:block;width:180px;padding:5px 10px;margin:0 auto;background:#009900;color:#fff">Dovolim piškotke</a></div></div></div></body></html>
