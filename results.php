@@ -41,7 +41,7 @@ $price_min = 0;
          }
          $sql = $sql . ");";
     }
-    echo $sql."<br>";
+    //echo $sql."<br>";
 $result = mysqli_query($conn, $sql)
 ?>
 <p class="hidden">
