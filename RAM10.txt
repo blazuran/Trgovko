@@ -1,0 +1,727 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Spomin :: AGT Trgovina d.o.o.</title>
+	<meta name="robots" content="index,follow">
+	<link type="text/css" media="print" href="/elements/print.css" rel="stylesheet">
+	<link type="text/css" href="/elements/default.css" rel="stylesheet">
+	<link href="/rss/" rel="alternate" type="application/rss+xml" title="AGT Trgovina d.o.o. - novičke">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/scripts/js/prototype.js"></script>
+	<script type="text/javascript" src="/scripts/js/scriptaculous.js?load=effects"></script><script type="text/javascript" src="http://www.agt.si/scripts/js/effects.js"></script>
+	<script type="text/javascript" src="/scripts/js/lightbox.js"></script>
+	<script type="text/javascript" src="/localscripts/overlib.js"></script>
+	<script type="text/javascript" src="/localscripts/external.js"></script>
+	<script type="text/javascript" src="/elements/cookie.js"></script>
+	<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-41705327-4',{'storage':'none','clientId':'e0d78d00ffe146269fc51b42304a0b08'});ga('send','pageview',{'anonymizeIp':true});</script>
+	<meta name="google-site-verification" content="hkzHUsdtyK12CZVX5dnQIg1Kv9WMPf9cjJ9jPWmYHRE">
+	<script type="text/javascript">var xajaxRequestUri="http://www.agt.si/racunalniska-oprema/spomin/index.10.html";var xajaxDebug=false;var xajaxStatusMessages=false;var xajaxWaitCursor=true;var xajaxDefinedGet=0;var xajaxDefinedPost=1;var xajaxLoaded=false;</script><script type="text/javascript" src="/scripts/xajax.js"></script><script type="text/javascript">window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: /scripts/xajax.js'); } }, 6000);</script>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+                <div id="logo"><a href="/"><img src="/elements/pics/logo.gif" alt="AGT d.o.o."></a></div>
+                <div id="menu_header">
+                        <div class="menu_header_item"><a href="/podjetje.html">O podjetju</a></div>
+                        <div class="menu_header_item"><a href="/servis-racunalnikov.html">Servis</a></div>
+                        <div class="menu_header_item"><a href="/splosni.html">Splošni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/placilni.html">Plačilni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/karta.html">Kje smo</a></div>
+                        <div class="menu_header_item"><a href="/vroca-ponudba/" style="color:#BCED49">Vroča ponudba</a></div>
+                </div>
+                <div id="header_cart">
+                                                        <b>Neprijavljen</b> - <a href="/auth/login.html">prijava</a><br>
+                                <a href="/auth/forgot.html">Pozabljeno geslo?</a>			
+                                                </div>
+                <div style="clear:both"></div>
+        </div>
+	<div>
+		<div id="menu">
+			<div class="menu-head">
+				Računalniška oprema		
+			</div>
+			<div class="menu-main">
+                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/barebone-sistemi/" class="linklvl1">Barebone</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/graficnekartice/" class="linklvl1">Grafične kartice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/maticneplosce/" class="linklvl1">Matične plošče</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/miske/" class="linklvl1">Miške</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/monitorji/" class="linklvl1">Monitorji</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/mrezna-oprema/" class="linklvl1">Mrežna oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/multimedija/" class="linklvl1">Multimedija</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/napajalniki/" class="linklvl1">Napajalniki</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/ohisja/" class="linklvl1">Ohišja</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/opticneenote/" class="linklvl1">Optične enote</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/osebni/" class="linklvl1">Računalniki-Namizni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/prenosniracunalniki/" class="linklvl1">Računalniki-Prenosni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/procesorji/" class="linklvl1">Procesorji</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/programska-oprema/" class="linklvl1">Programska oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/rabljena-oprema/" class="linklvl1">Rabljena oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/razno/" class="linklvl1">Razno</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/spomin/" class="linklvl1"><span class="active">Spomin</span></a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/tipkovnice/" class="linklvl1">Tipkovnice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/trdidiski/" class="linklvl1">Trdi diski</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/zracnahlajenja/" class="linklvl1">Hlajenje</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                			</div>
+			<div class="menu-foot"></div>
+			<br>
+			
+			<div id="nomad"><a href="/sestavi/" class="sestavi"></a></div>
+            <div class="menu-head"></div>
+			<div class="menu-main" style="line-height: 40px;padding:0px 10px 0 15px">
+                <a href="http://www.facebook.com/agt.si"><img src="/elements/buttons/fb.gif" align="absmiddle">&nbsp;&nbsp;AGT na Facebooku</a>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head">
+				Legenda		
+			</div>
+			<div class="menu-main">
+				<table cellspacing="0" cellpadding="0">
+					<tbody><tr>
+						<td align="center"><img src="/elements/pics/agt_s.gif" width="20" alt="AGT priporoča"></td>
+						<td>&nbsp;AGT priporoča</td>
+					</tr>
+					<tr>
+						<td align="center"><img src="/elements/pics/vroce_s.gif" width="20" alt="Vroča cena"></td>
+						<td>&nbsp;Vroča cena</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/novo_s.gif" width="20" alt="Novost"></td>
+						<td>&nbsp;Novost</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/masa_s.gif" width="20" alt="Brez poštnine"></td>
+						<td>&nbsp;Brez poštnine</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div style="text-align:center"><a href="http://www.companywall.biz" target="_blank" class="nohover"><img src="http://www.companywall.si/image/bonitet?id=1576&amp;type=2&amp;y=2017" alt="CompanyWall" width="162" height="162"></a></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><a href="http://www.intel.com/cd/channel/reseller/asmo-na/eng/membership/293121.htm" class="nohover"><img src="/elements/pics/intel.jpg" alt="Intel Channel Partner"></a></div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><img src="/elements/pics/recycling.jpg"><br>V našem podjetju se zavedamo, kako pomembna je skrb za čisto okolje. Zato vam omogočamo, da pri nas brezplačno pustite odsluženo računalniško opremo.<br><br><a href="/recycled.html" style="text-decoration:underline">Več o reciklaži</a></div>
+			<div class="menu-foot"></div>
+		</div>
+
+<div id="main">
+        <div id="news" style="background: url(/elements/pics/spomin.jpg)">
+        <h1>Spomin</h1>
+        Spomin ali RAM je računalniška komponenta, ki služi kratkotrajnemu shranjevanju podatkov med delom z računalnikom. V praktični uporabi večja količina računalniškega spomina predstavlja hitrejše delovanje računalnika in procesov, ki se na njemu izvajajo.    </div>
+    <div id="search">
+        <div class="search-head"></div>
+        <div class="search-main">
+            <form method="get" action="">
+                <table style="float:left;width:50%">
+                                                    <tbody><tr>
+                                    <td>Proizvajalec:</td>
+                                    <td>
+                                        <select name="proizvajalec">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="89">Corsair</option>
+                                                                                            <option value="78">Crucial</option>
+                                                                                            <option value="131">G.Skill</option>
+                                                                                            <option value="1">Gigabyte</option>
+                                                                                            <option value="124">Kingston</option>
+                                                                                            <option value="132">Patriot</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Kapaciteta:</td>
+                                    <td>
+                                        <select name="kapaciteta">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="5">2048 MB</option>
+                                                                                            <option value="42">4096 MB</option>
+                                                                                            <option value="129">8192 MB</option>
+                                                                                            <option value="180">16384 MB</option>
+                                                                                            <option value="187">32768 MB</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Tip:</td>
+                                    <td>
+                                        <select name="tip">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="2">DDR II</option>
+                                                                                            <option value="6">DDR II SODIMM</option>
+                                                                                            <option value="11">DDR III</option>
+                                                                                            <option value="12">DDR III SODIMM</option>
+                                                                                            <option value="13">DDR IV</option>
+                                                                                            <option value="15">DDR IV SODIMM</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>Frekvenca:</td>
+                                    <td>
+                                        <select name="frekvenca">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="113">1333 MHz</option>
+                                                                                            <option value="57">1600 MHz</option>
+                                                                                            <option value="68">1866 MHz</option>
+                                                                                            <option value="70">2133 MHz</option>
+                                                                                            <option value="33">2400 MHz</option>
+                                                                                            <option value="115">2666 MHz</option>
+                                                                                            <option value="30">3000 MHz</option>
+                                                                                            <option value="28">3200 MHz</option>
+                                                                                            <option value="112">3466 MHz</option>
+                                                                                            <option value="61">3600 MHz</option>
+                                                                                            <option value="399">3866 MHz</option>
+                                                                                            <option value="441">4133 MHz</option>
+                                                                                            <option value="471">4266 MHz</option>
+                                                                                            <option value="5">800 MHz</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                            </tbody></table>
+                <table style="float:left;width:50%">
+
+                                            <tbody><tr>
+                            <td>Cenovni razred</td>
+                            <td>
+                                <select name="cena">
+                                    <option value="">--- Izberi ---</option>
+                                                                            <option value="0-20">pod 20€</option>
+                                                                            <option value="20-60">od 20€ do 60€</option>
+                                                                            <option value="60-10000">nad 60€</option>
+                                                                    </select></td>
+                        </tr>
+                                        <tr>
+                        <td>Model:</td>
+                        <td><input type="text" name="ime" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Išči" class="submit"></td>
+                    </tr>
+                </tbody></table>
+            </form>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="search-foot"></div>
+    </div>
+    <div style="clear:both;"></div>
+            <div class="heading">
+                            <div style="float:left;padding:1px 0px 0px 5px;font-size:11px;font-weight:bold;"><a href="/elements/spomin.pdf">Navodila za uporabo in namestitev</a></div>
+                        <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (139                izdelkov)
+            </div>
+            <div class="navigator">Stran: <a href="./index.html">&nbsp;prva stran&nbsp;</a>:<a href="./index.5.html">&nbsp;<big>«</big>&nbsp;</a>:<a href="./index.8.html">&nbsp;8&nbsp;</a>:<a href="./index.9.html">&nbsp;9&nbsp;</a>:<span class="active">&nbsp;10&nbsp;</span>:<a href="./index.11.html">&nbsp;11&nbsp;</a>:<a href="./index.12.html">&nbsp;12&nbsp;</a></div>
+        </div>
+        <div style="margin-left:15px;">
+                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">239,34€</div>
+                                    <span id="img_cart_11127"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11127));return false;"></span>
+                                                            </div>
+                            <span class="p11">G.Skill</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/gskill-F4-3200C14D-16GFX.html">PC4-25600 "Flare X" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-845.jpg" rel="lightbox"><img src="/images/ram-tn-845.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">16384MB <br>DDR IV<br>3200 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">264,04€</div>
+                                    <span id="img_cart_11542"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11542));return false;"></span>
+                                                            </div>
+                            <span class="p11">G.Skill</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/g-skill-16gb-3200mhz-F4-3200C14D-16GTZR.html">PC4-25600 "Trident Z RGB" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-854.jpg" rel="lightbox"><img src="/images/ram-tn-854.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">16384MB <br>DDR IV<br>3200 MHz</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">270,66€</div>
+                                    <span id="img_cart_7828"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',7828));return false;"></span>
+                                                            </div>
+                            <span class="p11">Corsair</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/corsair-vengeance-lpx-ddr4-3466-16gbb.html">PC4-27700 "Vengeance LPX Black" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-636.jpg" rel="lightbox"><img src="/images/ram-tn-636.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">16384MB <br>DDR IV<br>3466 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">271,25€</div>
+                                    <span id="img_cart_9032"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9032));return false;"></span>
+                                                            </div>
+                            <span class="p11">Corsair</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/corsair-vengeance-lpx-ddr4-2400-32.html">PC4-19200 "Vengeance LPX Black" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-683.jpg" rel="lightbox"><img src="/images/ram-tn-683.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2400 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">272,12€</div>
+                                    <span id="img_cart_9031"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9031));return false;"></span>
+                                                            </div>
+                            <span class="p11">Corsair</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/corsair-vengeance-lpx-ddr4-2666-32.html">PC4-21300 "Vengeance LPX Black" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-682.jpg" rel="lightbox"><img src="/images/ram-tn-682.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2666 MHz</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">282,51€</div>
+                                    <span id="img_cart_11119"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11119));return false;"></span>
+                                                            </div>
+                            <span class="p11">Crucial</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/crucial-BLS2C16G4D26BFSC.html">PC4-21300 "Ballistix Sport LT White" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-841.jpg" rel="lightbox"><img src="/images/ram-tn-841.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2666 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">284,52€</div>
+                                    <span id="img_cart_11540"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11540));return false;"></span>
+                                                            </div>
+                            <span class="p11">G.Skill</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/g-skill-16gb-3600mhz-F4-3600C16D-16GTZR.html">PC4-28800 "Trident Z RGB" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-852.jpg" rel="lightbox"><img src="/images/ram-tn-852.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">16384MB <br>DDR IV<br>3600 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">284,89€</div>
+                                    <span id="img_cart_10100"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10100));return false;"></span>
+                                                            </div>
+                            <span class="p11">Crucial</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/crucial-bls4c8g4d240fse.html">PC4-19200 "Ballistix Sport LT Red" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-757.jpg" rel="lightbox"><img src="/images/ram-tn-757.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2400 MHz</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">284,89€</div>
+                                    <span id="img_cart_11120"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11120));return false;"></span>
+                                                            </div>
+                            <span class="p11">Crucial</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/crucial-BLS2C16G4D26BFSB.html">PC4-21300 "Ballistix Sport LT " KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-842.jpg" rel="lightbox"><img src="/images/ram-tn-842.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2666 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">291,22€</div>
+                                    <span id="img_cart_11550"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11550));return false;"></span>
+                                                            </div>
+                            <span class="p11">G.Skill</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/g-skill-32gb-2400mhz-F4-2400C15D-32GTZR.html">PC4-19200 "Trident Z RGB" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-860.jpg" rel="lightbox"><img src="/images/ram-tn-860.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2400 MHz</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">295,79€</div>
+                                    <span id="img_cart_7826"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',7826));return false;"></span>
+                                                            </div>
+                            <span class="p11">Corsair</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/corsair-vengeance-lpx-ddr4-2133-32gbBL.html">PC4-17000 "Vengeance LPX Black" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-634.jpg" rel="lightbox"><img src="/images/ram-tn-634.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2133 MHz</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">296,75€</div>
+                                    <span id="img_cart_10296"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',10296));return false;"></span>
+                                                            </div>
+                            <span class="p11">Crucial</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/spomin/crucial-BLS2C16G4D240FSB.html">PC4-19200 "Ballistix Sport LT" KIT</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/ram-768.jpg" rel="lightbox"><img src="/images/ram-tn-768.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">32768MB <br>DDR IV<br>2400 MHz</span>
+                                                    </div>
+                            </div>
+    <div style="clear:both;padding-top:10px;"></div>
+            <div class="heading">
+            <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (139                izdelkov)
+            </div>
+            <div class="navigator">Stran: <a href="./index.html">&nbsp;prva stran&nbsp;</a>:<a href="./index.5.html">&nbsp;<big>«</big>&nbsp;</a>:<a href="./index.8.html">&nbsp;8&nbsp;</a>:<a href="./index.9.html">&nbsp;9&nbsp;</a>:<span class="active">&nbsp;10&nbsp;</span>:<a href="./index.11.html">&nbsp;11&nbsp;</a>:<a href="./index.12.html">&nbsp;12&nbsp;</a></div>
+        </div>
+    </div>
+
+<div id="right">
+    <div class="new">
+                    <div class="new-head">
+                <a href="/shoppingcart/"><img src="/elements/pics/kos.gif" style="float:right" alt="Na košarico"></a>
+                Košarica
+                <div style="clear:both"></div>					
+            </div>				
+            <div id="small-main" class="new-main">
+                <br>
+
+                			
+                <div class="inputSmallCart">
+                    <div class="cart_price"><big><b>Skupaj</b></big></div>
+                    <div class="cart_total_price" id="cart_total_price"><big><b>0,00€</b></big></div>
+                    <div style="clear:both"></div>
+                </div>
+                <div style="clear:both"></div>
+                <br>
+                <a href="/shoppingcart/"><img src="/elements/pics/tothecart.gif" style="float:right" alt="Na košarico"></a>
+                <div style="clear:both"></div>					
+            </div>
+            <div class="new-foot"></div>
+            <br>
+                        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+            <a href="http://www.asus.com"><img src="/elements/pics/logo_agp.jpg" alt="ASUS AGP" /></a>
+        </div>
+        <div class="new-foot"></div>
+        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/skb.jpg" alt="SKB Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>	
+        -->
+        <!--
+
+        <br />
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+<a href="/placilni.html"><img src="/elements/pics/grenke.jpg" alt="Grenke" /></a>
+        </div>
+        <div class="new-foot"></div>	
+<div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/abanka.jpg" alt="A Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>
+        -->
+        <div id="compare">
+
+            <div class="new-head">
+    Primerjava
+</div>				
+<div id="small-main" class="new-main">
+    <br>
+
+    V primerjavo sta lahko vključeni le 2 komponenti iz kataloga. Če imate izbranih več, jih odstranite in poskusite znova.  
+    <br><br>
+
+    			
+    <div style="clear:both"></div>					
+</div>
+<div class="new-foot"></div>
+<br>
+
+        </div>
+        			
+                    <div class="new-head">Novosti</div>
+            <div class="new-main"><br>
+                		
+                        <div class="inputSmallNew" style="">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/spomin/gigabyte-16bg-classic-black-GP-GR26C16S8K2HU416.html">Gigabyte <b>PC4-21300 "Classic Black"</b> 16384 MB</a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                151,53€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        		
+                        <div class="inputSmallNew" style="border-top:1px dashed gray">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/spomin/g-skill-F4-3000C16D-16GISB.html">G.Skill <b>PC4-24000 "Aegis" KIT</b> 16384 MB</a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                133,99€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        		
+                        <div class="inputSmallNew" style="border-top:1px dashed gray">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/spomin/g-skill-F4-3200C16D-16GVKB.html">G.Skill <b>PC4-25600 "Ripjaws V" KIT</b> 16384 MB</a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                157,37€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        		
+                        <div class="inputSmallNew" style="border-top:1px dashed gray">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/spomin/kingston-KVR26S19D8-16.html">Kingston <b>PC4-21300 "ValueRAM" SODIMM</b> 16384 MB</a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                143,93€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        		
+                        <div class="inputSmallNew" style="border-top:1px dashed gray">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/spomin/kingston-value-sodimm-16GB-2400mhz.html">Kingston <b>PC4-19200 "ValueRAM" SODIMM</b> 16384 MB</a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                187,45€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        				
+            </div>
+            <div class="new-foot"></div>
+            				
+    </div>
+</div>
+
+		<div style="clear:both"></div>
+	</div>
+<div id="footer">
+			<p style="text-align: center;padding-top:20px;"><br><br>
+			
+				<a href="http://www.3dconnexion.com/" target="_new"><img src="/images/zast-128.jpg" alt="3D Connexion"></a>
+			
+				<a href="http://www.antec.com/uk/" target="_new"><img src="/images/zast-143.jpg" alt="Antec"></a>
+			
+				<a href="http://www.aoc-europe.com/" target="_new"><img src="/images/zast-173.jpg" alt="AOC"></a>
+			
+				<a href="http://www.asus.com" target="_new"><img src="/images/zast-17.jpg" alt="ASUS"></a>
+			
+				<a href="http://www.coolermaster.com/" target="_new"><img src="/images/zast-37.jpg" alt="Cooler Master"></a>
+			
+				<a href="http://www.corsairmemory.com" target="_new"><img src="/images/zast-89.jpg" alt="Corsair"></a>
+			
+				<a href="http://www.dell.com/" target="_new"><img src="/images/zast-161.jpg" alt="DELL"></a>
+			
+				<a href="http://www.fractal-design.com/index.php?view=" target="_new"><img src="/images/zast-191.jpg" alt="Fractal Design"></a>
+			
+				<a href="http://www.giga-byte.com" target="_new"><img src="/images/zast-1.jpg" alt="Gigabyte"></a>
+			
+				<a href="http://www.iiyama-monitors.co.uk/" target="_new"><img src="/images/zast-218.jpg" alt="Iiyama"></a>
+			
+				<a href="http://www.intel.com" target="_new"><img src="/images/zast-2.jpg" alt="Intel"></a>
+			
+				<a href="http://www.lc-power.com/" target="_new"><img src="/images/zast-35.jpg" alt="LC Power"></a>
+			
+				<a href="http://www.microsoft.com/" target="_new"><img src="/images/zast-94.jpg" alt="Microsoft"></a>
+			
+				<a href="https://www.msi.com" target="_new"><img src="/images/zast-73.jpg" alt="MSI"></a>
+			
+				<a href="http://www.nec.com" target="_new"><img src="/images/zast-18.jpg" alt="NEC"></a>
+			
+				<a href="http://www.nzxt.com/" target="_new"><img src="/images/zast-82.jpg" alt="NZXT"></a>
+			
+				<a href="http://www.pny.com/" target="_new"><img src="/images/zast-50.jpg" alt="PNY"></a>
+			
+				<a href="http://www.razerzone.com/" target="_new"><img src="/images/zast-133.jpg" alt="Razer"></a>
+			
+				<a href="http://www.samsung.com/" target="_new"><img src="/images/zast-23.jpg" alt="Samsung"></a>
+			
+				<a href="http://www.sapphiretech.com/presentation/?lid=1" target="_new"><img src="/images/zast-14.jpg" alt="Sapphire"></a>
+			
+				<a href="http://www.seagate.com/" target="_new"><img src="/images/zast-26.jpg" alt="Seagate"></a>
+			
+				<a href="http://en-de.sennheiser.com/" target="_new"><img src="/images/zast-252.gif" alt="Sennheiser"></a>
+			
+				<a href="http://www.supermicro.com" target="_new"><img src="/images/zast-79.jpg" alt="Supermicro"></a>
+			
+				<a href="http://www.toshiba-europe.com/" target="_new"><img src="/images/zast-148.jpg" alt="Toshiba"></a>
+			
+				<a href="http://www.tp-link.com/en/" target="_new"><img src="/images/zast-292.jpg" alt="TP-Link"></a>
+			
+				<a href="http://www.westerndigital.com" target="_new"><img src="/images/zast-27.jpg" alt="Western Digital"></a>
+				
+			</p>
+
+
+<p align="center" style="padding-top:20px;">
+© 2006-14 AGT Trgovina d.o.o., email: <a href="mailto:trgovina@agt.si">trgovina@agt.si</a>, Powered by <a href="http://www.vpo.si" alt="Izdelava spletnih strani in optimizacija spletnih strani">VPO</a>
+</p>
+</div>
+</div>
+
+<div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="/scripts/js/images/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="/scripts/js/images/closelabel.gif"></a></div></div></div></div><div id="cookie_consent" style="position: fixed; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.701961); color: rgb(255, 255, 255); text-align: center; font-size: 1.4em; line-height: 1.5em;"><div style="position:absolute;right:0;width:20px;height:20px;line-height:20px;"><a style="color:#fff;text-decoration:none;" href="#" onclick="var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;">x</a></div><div style="padding:10px 0;margin:0 auto;width:960px;overflow:auto;"><div style="width:700px;float:left;">Naše spletno mesto uporablja piškotke za boljše delovanje in spletno analitiko. Ali se strinjate s tem, da vam nastavimo piškotke?<br><a href="http://www.pp.si/cookies.html" style="font-size:0.6em;color:#fff">Zanima me več o piškotkih</a></div><div style="width:260px;float:right;text-align:center;"><a href="#" onclick="document.cookie='c_consent=true;path=/';var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;" style="display:block;width:180px;padding:5px 10px;margin:0 auto;background:#009900;color:#fff">Dovolim piškotke</a></div></div></div></body></html>

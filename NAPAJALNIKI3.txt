@@ -1,0 +1,634 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Napajalniki :: AGT Trgovina d.o.o.</title>
+	<meta name="robots" content="index,follow">
+	<link type="text/css" media="print" href="/elements/print.css" rel="stylesheet">
+	<link type="text/css" href="/elements/default.css" rel="stylesheet">
+	<link href="/rss/" rel="alternate" type="application/rss+xml" title="AGT Trgovina d.o.o. - novičke">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/scripts/js/prototype.js"></script>
+	<script type="text/javascript" src="/scripts/js/scriptaculous.js?load=effects"></script><script type="text/javascript" src="http://www.agt.si/scripts/js/effects.js"></script>
+	<script type="text/javascript" src="/scripts/js/lightbox.js"></script>
+	<script type="text/javascript" src="/localscripts/overlib.js"></script>
+	<script type="text/javascript" src="/localscripts/external.js"></script>
+	<script type="text/javascript" src="/elements/cookie.js"></script>
+	<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-41705327-4',{'storage':'none','clientId':'e0d78d00ffe146269fc51b42304a0b08'});ga('send','pageview',{'anonymizeIp':true});</script>
+	<meta name="google-site-verification" content="hkzHUsdtyK12CZVX5dnQIg1Kv9WMPf9cjJ9jPWmYHRE">
+	<script type="text/javascript">var xajaxRequestUri="http://www.agt.si/racunalniska-oprema/napajalniki/index.3.html";var xajaxDebug=false;var xajaxStatusMessages=false;var xajaxWaitCursor=true;var xajaxDefinedGet=0;var xajaxDefinedPost=1;var xajaxLoaded=false;</script><script type="text/javascript" src="/scripts/xajax.js"></script><script type="text/javascript">window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: /scripts/xajax.js'); } }, 6000);</script>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+                <div id="logo"><a href="/"><img src="/elements/pics/logo.gif" alt="AGT d.o.o."></a></div>
+                <div id="menu_header">
+                        <div class="menu_header_item"><a href="/podjetje.html">O podjetju</a></div>
+                        <div class="menu_header_item"><a href="/servis-racunalnikov.html">Servis</a></div>
+                        <div class="menu_header_item"><a href="/splosni.html">Splošni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/placilni.html">Plačilni pogoji</a></div>
+                        <div class="menu_header_item"><a href="/karta.html">Kje smo</a></div>
+                        <div class="menu_header_item"><a href="/vroca-ponudba/" style="color:#BCED49">Vroča ponudba</a></div>
+                </div>
+                <div id="header_cart">
+                                                        <b>Neprijavljen</b> - <a href="/auth/login.html">prijava</a><br>
+                                <a href="/auth/forgot.html">Pozabljeno geslo?</a>			
+                                                </div>
+                <div style="clear:both"></div>
+        </div>
+	<div>
+		<div id="menu">
+			<div class="menu-head">
+				Računalniška oprema		
+			</div>
+			<div class="menu-main">
+                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/barebone-sistemi/" class="linklvl1">Barebone</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/graficnekartice/" class="linklvl1">Grafične kartice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/maticneplosce/" class="linklvl1">Matične plošče</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/miske/" class="linklvl1">Miške</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/monitorji/" class="linklvl1">Monitorji</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/mrezna-oprema/" class="linklvl1">Mrežna oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/multimedija/" class="linklvl1">Multimedija</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/napajalniki/" class="linklvl1"><span class="active">Napajalniki</span></a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/ohisja/" class="linklvl1">Ohišja</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/opticneenote/" class="linklvl1">Optične enote</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/osebni/" class="linklvl1">Računalniki-Namizni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/prenosniracunalniki/" class="linklvl1">Računalniki-Prenosni</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/procesorji/" class="linklvl1">Procesorji</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/programska-oprema/" class="linklvl1">Programska oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/rabljena-oprema/" class="linklvl1">Rabljena oprema</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/razno/" class="linklvl1">Razno</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/spomin/" class="linklvl1">Spomin</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/tipkovnice/" class="linklvl1">Tipkovnice</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/trdidiski/" class="linklvl1">Trdi diski</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                                                                <div class="lvl1">
+                                                        <div class="button-lvl1"></div>
+                                                        <a href="/racunalniska-oprema/zracnahlajenja/" class="linklvl1">Hlajenje</a>
+                                                        <div style="clear:both"></div>
+                                                </div>
+                                                			</div>
+			<div class="menu-foot"></div>
+			<br>
+			
+			<div id="nomad"><a href="/sestavi/" class="sestavi"></a></div>
+            <div class="menu-head"></div>
+			<div class="menu-main" style="line-height: 40px;padding:0px 10px 0 15px">
+                <a href="http://www.facebook.com/agt.si"><img src="/elements/buttons/fb.gif" align="absmiddle">&nbsp;&nbsp;AGT na Facebooku</a>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head">
+				Legenda		
+			</div>
+			<div class="menu-main">
+				<table cellspacing="0" cellpadding="0">
+					<tbody><tr>
+						<td align="center"><img src="/elements/pics/agt_s.gif" width="20" alt="AGT priporoča"></td>
+						<td>&nbsp;AGT priporoča</td>
+					</tr>
+					<tr>
+						<td align="center"><img src="/elements/pics/vroce_s.gif" width="20" alt="Vroča cena"></td>
+						<td>&nbsp;Vroča cena</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/novo_s.gif" width="20" alt="Novost"></td>
+						<td>&nbsp;Novost</td>
+					</tr>
+					<tr>
+						<td><img src="/elements/pics/masa_s.gif" width="20" alt="Brez poštnine"></td>
+						<td>&nbsp;Brez poštnine</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<div class="menu-foot"></div>
+			<br>
+			<div style="text-align:center"><a href="http://www.companywall.biz" target="_blank" class="nohover"><img src="http://www.companywall.si/image/bonitet?id=1576&amp;type=2&amp;y=2017" alt="CompanyWall" width="162" height="162"></a></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><a href="http://www.intel.com/cd/channel/reseller/asmo-na/eng/membership/293121.htm" class="nohover"><img src="/elements/pics/intel.jpg" alt="Intel Channel Partner"></a></div>
+			<div class="menu-foot"></div>
+			<br>
+			<div class="menu-head" style="height:12px;"></div>
+			<div class="menu-main" style="text-align:center"><img src="/elements/pics/recycling.jpg"><br>V našem podjetju se zavedamo, kako pomembna je skrb za čisto okolje. Zato vam omogočamo, da pri nas brezplačno pustite odsluženo računalniško opremo.<br><br><a href="/recycled.html" style="text-decoration:underline">Več o reciklaži</a></div>
+			<div class="menu-foot"></div>
+		</div>
+
+<div id="main">
+        <div id="news" style="background: url(/elements/pics/napajalniki.jpg)">
+        <h1>Napajalniki</h1>
+        Računalniški napajalnik je naprava, namenjena pretvorbi električne napetosti 230 Voltov (V) v več manjših električnih napetosti, ki jih računalnik potrebuje za svoje delovanje. Moč napajalnika NI uradno certificirana, tako da se spreminja od proizvajalca do proizvajalca.  Najbolj zanesljiv način določanja moči napajalnika je podatek številu 12 Voltnih linij, ki jih napajalnik ima in električnemu toku na njih, ki je izražen v Amperih (A).    </div>
+    <div id="search">
+        <div class="search-head"></div>
+        <div class="search-main">
+            <form method="get" action="">
+                <table style="float:left;width:50%">
+                                                    <tbody><tr>
+                                    <td>Proizvajalec:</td>
+                                    <td>
+                                        <select name="proizvajalec">
+                                            <option value="">--- Izberi ---</option>
+                                                                                            <option value="143">Antec</option>
+                                                                                            <option value="213">be quiet!</option>
+                                                                                            <option value="41">Chieftec</option>
+                                                                                            <option value="37">Cooler Master</option>
+                                                                                            <option value="89">Corsair</option>
+                                                                                            <option value="262">Delta Electronics</option>
+                                                                                            <option value="1">Gigabyte</option>
+                                                                                            <option value="212">Seasonic</option>
+                                                                                            <option value="45">SilverStone</option>
+                                                                                    </select>
+                                    </td>
+                                </tr>
+                                            </tbody></table>
+                <table style="float:left;width:50%">
+
+                                            <tbody><tr>
+                            <td>Cenovni razred</td>
+                            <td>
+                                <select name="cena">
+                                    <option value="">--- Izberi ---</option>
+                                                                            <option value="0-30">pod 30€</option>
+                                                                            <option value="30-60">od 30€ do 60€</option>
+                                                                            <option value="60-10000">nad 60€</option>
+                                                                    </select></td>
+                        </tr>
+                                        <tr>
+                        <td>Model:</td>
+                        <td><input type="text" name="ime" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Išči" class="submit"></td>
+                    </tr>
+                </tbody></table>
+            </form>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="search-foot"></div>
+    </div>
+    <div style="clear:both;"></div>
+            <div class="heading">
+                            <div style="float:left;padding:1px 0px 0px 5px;font-size:11px;font-weight:bold;"><a href="/elements/napajalniki.pdf">Navodila za uporabo in namestitev</a></div>
+                        <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (76                izdelkov)
+            </div>
+            <div class="navigator">Stran: <a href="./index.html">&nbsp;1&nbsp;</a>:<a href="./index.2.html">&nbsp;2&nbsp;</a>:<span class="active">&nbsp;3&nbsp;</span>:<a href="./index.4.html">&nbsp;4&nbsp;</a>:<a href="./index.5.html">&nbsp;5&nbsp;</a>:<a href="./index.7.html">&nbsp;<big>»</big>&nbsp;</a></div>
+        </div>
+        <div style="margin-left:15px;">
+                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">71,13€</div>
+                                    <span id="img_cart_12145"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',12145));return false;"></span>
+                                                            </div>
+                            <span class="p11">Antec</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/antec-NeoECO-NE650M-EC-650W.html">NE650M EC "NeoECO" 650W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-483.jpg" rel="lightbox"><img src="/images/nap-tn-483.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">650W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">72,47€</div>
+                                    <span id="img_cart_8017"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',8017));return false;"></span>
+                                                            </div>
+                            <span class="p11">be quiet!</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/bequiet-tfx-power2-300w-gold.html">TFX Power 2 300W Gold</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-370.jpg" rel="lightbox"><img src="/images/nap-tn-370.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">300W</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">73,61€</div>
+                                    <span id="img_cart_11497"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11497));return false;"></span>
+                                                            </div>
+                            <span class="p11">Seasonic</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/seasonic-focus-80-plus-gold-netzteil-modular-450w.html">"Focus" 450W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-457.jpg" rel="lightbox"><img src="/images/nap-tn-457.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">450W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">73,82€</div>
+                                    <span id="img_cart_8015"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',8015));return false;"></span>
+                                                            </div>
+                            <span class="p11">be quiet!</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/bequiet-sfx-power2-400w.html">SFX Power 2 400W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-368.jpg" rel="lightbox"><img src="/images/nap-tn-368.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">400W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">74,96€</div>
+                                    <span id="img_cart_11780"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11780));return false;"></span>
+                                                            </div>
+                            <span class="p11">Cooler Master</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/cooler-master-masterwatt-550w.html">MasterWatt 550W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-477.jpg" rel="lightbox"><img src="/images/nap-tn-477.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">550W</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">75,16€</div>
+                                    <span id="img_cart_4562"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',4562));return false;"></span>
+                                                            </div>
+                            <span class="p11">SilverStone</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/silverstone-sst-st70f-es.html">"Strider Essential" 700W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-171.jpg" rel="lightbox"><img src="/images/nap-tn-171.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">700W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">79,54€</div>
+                                    <span id="img_cart_11440"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11440));return false;"></span>
+                                                            </div>
+                            <span class="p11">Chieftec</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/ChieftecProtonSeries-BDF-750C.html">Proton Series BDF-750C 750W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-451.jpg" rel="lightbox"><img src="/images/nap-tn-451.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">750W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">80,53€</div>
+                                    <span id="img_cart_11781"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11781));return false;"></span>
+                                                            </div>
+                            <span class="p11">Cooler Master</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/cooler-master-masterwatt-750w.html">MasterWatt 750W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-478.jpg" rel="lightbox"><img src="/images/nap-tn-478.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">750W</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">83,21€</div>
+                                    <span id="img_cart_8018"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',8018));return false;"></span>
+                                                            </div>
+                            <span class="p11">be quiet!</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/bequiet-straight-power10-400w.html">Straight Power 10 400W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-371.jpg" rel="lightbox"><img src="/images/nap-tn-371.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">400W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">83,32€</div>
+                                    <span id="img_cart_9938"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',9938));return false;"></span>
+                                                            </div>
+                            <span class="p11">Gigabyte</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/gigabyte-b700h-700w.html">B700H 700W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-411.jpg" rel="lightbox"><img src="/images/nap-tn-411.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">700W</span>
+                                                    </div>
+                                                                    <div class="box">
+                                                        <div class="more">
+                                <div>
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">84,55€</div>
+                                    <span id="img_cart_11422"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',11422));return false;"></span>
+                                                            </div>
+                            <span class="p11">Antec</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/antec-EarthWatts-Gold-Pro-EA550G.html">EA550G PRO "EarthWatts Gold" 550W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-445.jpg" rel="lightbox"><img src="/images/nap-tn-445.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">550W</span>
+                                                    </div>
+                                                                    <div class="box" style="margin-right:0px;">
+                                                        <div class="more">
+                                <div>
+                                                                            <img src="/elements/pics/novo.gif" alt="Novost">
+                                                                        <img src="/elements/pics/blank.gif" alt="">
+                                </div>
+                                
+                                    <div style="padding-left:5px;padding-top:7px;float:right;">87,24€</div>
+                                    <span id="img_cart_12152"><img src="/elements/pics/cart_item.gif" alt="cart" style="float:left;cursor:pointer;" onclick="xajax.call('addcart', new Array('small',12152));return false;"></span>
+                                                            </div>
+                            <span class="p11">Corsair</span><br>
+
+                            <div class="pb"><a href="/racunalniska-oprema/napajalniki/corsair-v650m-650w.html">"Vengeance Series" V650M 650W</a>
+                            </div>
+                            <div style="float:right;padding-right:10px;">
+                                                                    <a href="/images/nap-485.jpg" rel="lightbox"><img src="/images/nap-tn-485.jpg" alt=""></a>
+                                                            </div>
+                                                            <span class="p11">650W</span>
+                                                    </div>
+                            </div>
+    <div style="clear:both;padding-top:10px;"></div>
+            <div class="heading">
+            <div style="float:right;padding-top:1px;font-size:11px;font-weight:bold;"> (76                izdelkov)
+            </div>
+            <div class="navigator">Stran: <a href="./index.html">&nbsp;1&nbsp;</a>:<a href="./index.2.html">&nbsp;2&nbsp;</a>:<span class="active">&nbsp;3&nbsp;</span>:<a href="./index.4.html">&nbsp;4&nbsp;</a>:<a href="./index.5.html">&nbsp;5&nbsp;</a>:<a href="./index.7.html">&nbsp;<big>»</big>&nbsp;</a></div>
+        </div>
+    </div>
+
+<div id="right">
+    <div class="new">
+                    <div class="new-head">
+                <a href="/shoppingcart/"><img src="/elements/pics/kos.gif" style="float:right" alt="Na košarico"></a>
+                Košarica
+                <div style="clear:both"></div>					
+            </div>				
+            <div id="small-main" class="new-main">
+                <br>
+
+                			
+                <div class="inputSmallCart">
+                    <div class="cart_price"><big><b>Skupaj</b></big></div>
+                    <div class="cart_total_price" id="cart_total_price"><big><b>0,00€</b></big></div>
+                    <div style="clear:both"></div>
+                </div>
+                <div style="clear:both"></div>
+                <br>
+                <a href="/shoppingcart/"><img src="/elements/pics/tothecart.gif" style="float:right" alt="Na košarico"></a>
+                <div style="clear:both"></div>					
+            </div>
+            <div class="new-foot"></div>
+            <br>
+                        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+            <a href="http://www.asus.com"><img src="/elements/pics/logo_agp.jpg" alt="ASUS AGP" /></a>
+        </div>
+        <div class="new-foot"></div>
+        <!--
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/skb.jpg" alt="SKB Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>	
+        -->
+        <!--
+
+        <br />
+        <div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+<a href="/placilni.html"><img src="/elements/pics/grenke.jpg" alt="Grenke" /></a>
+        </div>
+        <div class="new-foot"></div>	
+<div class="new-head">&nbsp;</div>
+        <div class="new-main" style="text-align:center">
+        <a href="/placilni.html"><img src="/elements/pics/abanka.jpg" alt="A Kredit" /></a>
+        </div>
+        <div class="new-foot"></div>
+        -->
+        <div id="compare">
+
+            <div class="new-head">
+    Primerjava
+</div>				
+<div id="small-main" class="new-main">
+    <br>
+
+    V primerjavo sta lahko vključeni le 2 komponenti iz kataloga. Če imate izbranih več, jih odstranite in poskusite znova.  
+    <br><br>
+
+    			
+    <div style="clear:both"></div>					
+</div>
+<div class="new-foot"></div>
+<br>
+
+        </div>
+        			
+                    <div class="new-head">Novosti</div>
+            <div class="new-main"><br>
+                		
+                        <div class="inputSmallNew" style="">
+                            <div class="cart_article">
+                                <a href="/racunalniska-oprema/napajalniki/corsair-v650m-650w.html">Corsair <b>"Vengeance Series" V650M 650W</b></a>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="cart_submit">
+                            </div>
+                            <div class="cart_total_price">
+                                87,24€                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        				
+            </div>
+            <div class="new-foot"></div>
+            				
+    </div>
+</div>
+
+		<div style="clear:both"></div>
+	</div>
+<div id="footer">
+			<p style="text-align: center;padding-top:20px;"><br><br>
+			
+				<a href="http://www.3dconnexion.com/" target="_new"><img src="/images/zast-128.jpg" alt="3D Connexion"></a>
+			
+				<a href="http://www.antec.com/uk/" target="_new"><img src="/images/zast-143.jpg" alt="Antec"></a>
+			
+				<a href="http://www.aoc-europe.com/" target="_new"><img src="/images/zast-173.jpg" alt="AOC"></a>
+			
+				<a href="http://www.asus.com" target="_new"><img src="/images/zast-17.jpg" alt="ASUS"></a>
+			
+				<a href="http://www.coolermaster.com/" target="_new"><img src="/images/zast-37.jpg" alt="Cooler Master"></a>
+			
+				<a href="http://www.corsairmemory.com" target="_new"><img src="/images/zast-89.jpg" alt="Corsair"></a>
+			
+				<a href="http://www.dell.com/" target="_new"><img src="/images/zast-161.jpg" alt="DELL"></a>
+			
+				<a href="http://www.fractal-design.com/index.php?view=" target="_new"><img src="/images/zast-191.jpg" alt="Fractal Design"></a>
+			
+				<a href="http://www.giga-byte.com" target="_new"><img src="/images/zast-1.jpg" alt="Gigabyte"></a>
+			
+				<a href="http://www.iiyama-monitors.co.uk/" target="_new"><img src="/images/zast-218.jpg" alt="Iiyama"></a>
+			
+				<a href="http://www.intel.com" target="_new"><img src="/images/zast-2.jpg" alt="Intel"></a>
+			
+				<a href="http://www.lc-power.com/" target="_new"><img src="/images/zast-35.jpg" alt="LC Power"></a>
+			
+				<a href="http://www.microsoft.com/" target="_new"><img src="/images/zast-94.jpg" alt="Microsoft"></a>
+			
+				<a href="https://www.msi.com" target="_new"><img src="/images/zast-73.jpg" alt="MSI"></a>
+			
+				<a href="http://www.nec.com" target="_new"><img src="/images/zast-18.jpg" alt="NEC"></a>
+			
+				<a href="http://www.nzxt.com/" target="_new"><img src="/images/zast-82.jpg" alt="NZXT"></a>
+			
+				<a href="http://www.pny.com/" target="_new"><img src="/images/zast-50.jpg" alt="PNY"></a>
+			
+				<a href="http://www.razerzone.com/" target="_new"><img src="/images/zast-133.jpg" alt="Razer"></a>
+			
+				<a href="http://www.samsung.com/" target="_new"><img src="/images/zast-23.jpg" alt="Samsung"></a>
+			
+				<a href="http://www.sapphiretech.com/presentation/?lid=1" target="_new"><img src="/images/zast-14.jpg" alt="Sapphire"></a>
+			
+				<a href="http://www.seagate.com/" target="_new"><img src="/images/zast-26.jpg" alt="Seagate"></a>
+			
+				<a href="http://en-de.sennheiser.com/" target="_new"><img src="/images/zast-252.gif" alt="Sennheiser"></a>
+			
+				<a href="http://www.supermicro.com" target="_new"><img src="/images/zast-79.jpg" alt="Supermicro"></a>
+			
+				<a href="http://www.toshiba-europe.com/" target="_new"><img src="/images/zast-148.jpg" alt="Toshiba"></a>
+			
+				<a href="http://www.tp-link.com/en/" target="_new"><img src="/images/zast-292.jpg" alt="TP-Link"></a>
+			
+				<a href="http://www.westerndigital.com" target="_new"><img src="/images/zast-27.jpg" alt="Western Digital"></a>
+				
+			</p>
+
+
+<p align="center" style="padding-top:20px;">
+© 2006-14 AGT Trgovina d.o.o., email: <a href="mailto:trgovina@agt.si">trgovina@agt.si</a>, Powered by <a href="http://www.vpo.si" alt="Izdelava spletnih strani in optimizacija spletnih strani">VPO</a>
+</p>
+</div>
+</div>
+
+<div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="/scripts/js/images/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="/scripts/js/images/closelabel.gif"></a></div></div></div></div><div id="cookie_consent" style="position: fixed; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.701961); color: rgb(255, 255, 255); text-align: center; font-size: 1.4em; line-height: 1.5em;"><div style="position:absolute;right:0;width:20px;height:20px;line-height:20px;"><a style="color:#fff;text-decoration:none;" href="#" onclick="var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;">x</a></div><div style="padding:10px 0;margin:0 auto;width:960px;overflow:auto;"><div style="width:700px;float:left;">Naše spletno mesto uporablja piškotke za boljše delovanje in spletno analitiko. Ali se strinjate s tem, da vam nastavimo piškotke?<br><a href="http://www.pp.si/cookies.html" style="font-size:0.6em;color:#fff">Zanima me več o piškotkih</a></div><div style="width:260px;float:right;text-align:center;"><a href="#" onclick="document.cookie='c_consent=true;path=/';var e=document.getElementById('cookie_consent');e.parentElement.removeChild(e);return false;" style="display:block;width:180px;padding:5px 10px;margin:0 auto;background:#009900;color:#fff">Dovolim piškotke</a></div></div></div></body></html>
