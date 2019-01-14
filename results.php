@@ -8,7 +8,7 @@ $price_min = 0;
     if(isset($_POST['search_value']))
     {
         $search_value = $_POST['search_value'];
-        $sql = "SELECT * FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+        $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
     }
     if (isset($_GET["search"])) 
     {
@@ -41,6 +41,14 @@ $price_min = 0;
          }
          $sql = $sql . ");";
     }
+    
+    if (isset($_GET["order"])) {
+    $orderby = $_GET["order"];
+    $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title like '%$search_value%' ORDER BY $orderby;";
+} else {
+    $orderby = "Price ASC";
+    $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title like '%$search_value%'";
+}
     //echo $sql."<br>";
 $result = mysqli_query($conn, $sql)
 ?>
@@ -115,7 +123,7 @@ $result = mysqli_query($conn, $sql)
     <!-- VSEBINA -->
     <h6 style="position:center"> Vaše iskane besede : <b><?php echo $search_value; ?></b></h6>
     <!--RAZVRSTI PO -->
-    <form class="clear" action="orderByResults.php?">
+    <!--<form class="clear" action="orderByResults.php?">
         <input type="hidden" name="Search" value="<?php echo $search_value; ?>"/>
         <select name="order" onchange="this.form.submit()">
             <option value="Price ASC">Cena (najnižja najprej)</option>
@@ -123,10 +131,107 @@ $result = mysqli_query($conn, $sql)
             <option value="Title ASC">Naziv izdelka (A-Z)</option>
             <option value="Title DESC">Naziv izdelka (Z-A)</option>
         </select>
+    </form> -->
+    <form action="orderByResults.php?">
+        <input type="hidden" name="Search" value="<?php echo $search_value; ?>" /> 
+        <select name="order" onchange="this.form.submit()">     
+            <option <?php
+                if ($orderby == "Stores_ID") {
+                    echo 'selected';
+                }
+                ?> value="Stores_ID" <?php
+                if ($orderby == "Stores_ID") {
+                    echo 'selected';
+                }
+                ?> >Trgovine</option>
+            <option <?php
+            if ($orderby == "Price ASC") {
+                echo 'selected';
+            }
+            ?> value="Price ASC">Cena (najnižja najprej)</option>
+            <option <?php
+            if ($orderby == "Price DESC") {
+                echo 'selected';
+            }
+            ?> value="Price DESC">Cena (najvišja najprej)</option>
+            <option <?php
+    if ($orderby == "Title ASC") {
+        echo 'selected';
+    }
+    ?> value="Title ASC">Naziv izdelka (A-Z)</option>
+            <option <?php
+    if ($orderby == "Title DESC") {
+        echo 'selected';
+    }
+    ?> value="Title DESC">Naziv izdelka (Z-A)</option>
+        </select>
     </form>
+    <script>
+                    function prikazi(z) {
+                        var x = document.getElementById(z);
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
     <div class="elementi">
         <?php
+if ($orderby == "Stores_ID") {
+    $sqlStores = "SELECT s.* FROM stores s INNER JOIN products p ON p.Stores_ID = s.ID WHERE Title like '%$search_value%' GROUP BY s.Name";
+    $resultStores = $conn->query($sqlStores);
+    
+        if (!$resultStores) {
+            trigger_error('Invalid query: ' . $conn->error);
+        }
+        if ($resultStores->num_rows > 0) {
+            // output data of each row
 
+            while ($rowStores = $resultStores->fetch_assoc()) {
+            $StoreName=$rowStores["Name"];
+            $StoreName=substr($StoreName, 0, 3);
+            $prikazi = "prikazi('".$StoreName."')";
+                echo $rowStores["Name"]."<button onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName>";                
+                $storeID=$rowStores["ID"];
+                    $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
+                    $resultProducts  = $conn->query($sqlProducts);
+
+                        if (!$resultProducts ) {
+                            trigger_error('Invalid query: ' . $conn->error);
+                        }
+                        if ($resultProducts ->num_rows > 0) {
+                            // output data of each row
+                            $first = true;
+                            $ct = 0;        
+                            while ($rowProducts = $resultProducts ->fetch_assoc()) {
+                                $ct++;
+                            $id = $rowProducts["ID"];    
+                            $sqlPicture = "SELECT * FROM Pictures WHERE Products_ID='$id' LIMIT 1";
+                            $resultPicture = $conn->query($sqlPicture);
+                            $rowPicture = $resultPicture->fetch_assoc();
+                            ?>
+                            <div class="one_third <?= $first == true ? "first" : ""; ?> btmspace-30">
+                                <div class="block inspace-30 borderedbox">
+                                    <h6 class="font-x1">
+                            <?php
+                            echo " Name: <a href='product.php?id=$id'>" . $rowProducts["Title"] . "</a><br> Cena: " . $rowProducts["Price"] . "<br><img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>";
+                            ?>
+                                        </h6>
+                                </div>
+                            </div>
+                            
+                            <?php
+                            $first = ($ct % 3 == 0) ? true : false;
+                            }
+                            
+                        }
+                echo "</div>";
+            }
+        }
+    }
+    else
+    {
         if (!$result) {
             trigger_error('Invalid query: ' . $conn->error);
         }
@@ -162,6 +267,7 @@ $result = mysqli_query($conn, $sql)
         } else {
             echo "Ni izdelkov";
         }
+    }
         ?>
     </div>
     <!-- SREDINA -->

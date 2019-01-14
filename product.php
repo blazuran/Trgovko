@@ -46,7 +46,7 @@ include_once "db.php";
         }
     }
 
-    echo "<br><br>Najceneje:" . "<h5><b>". $row["Price"]."€</b></h5>" ;
+    echo "<br><br>Najceneje:" . "<h5><b>". $row["Price"]."€</b></h5><br><b>Opis:</b> ".$row['Description']."<br>" ;
 
 
     if(isset($_SESSION['ID'])){

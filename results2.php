@@ -76,8 +76,8 @@ $result = $conn->query($sql);
         </select>
     </form>
                     <script>
-                    function prikazi(Name) {
-                        var x = document.getElementById(Name);
+                    function prikazi(z) {
+                        var x = document.getElementById(z);
                         if (x.style.display === "none") {
                             x.style.display = "block";
                         } else {
@@ -98,7 +98,9 @@ $result = $conn->query($sql);
 
             while ($rowStores = $resultStores->fetch_assoc()) {
             $StoreName=$rowStores["Name"];
-                echo $rowStores["Name"]."<button onclick='prikazi($StoreName)'>Prikazi</button><div id=$StoreName>";
+            $StoreName=substr($StoreName, 0, 3);
+            $prikazi = "prikazi('".$StoreName."')";
+                echo $rowStores["Name"]."<button onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName>";                
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);
@@ -108,7 +110,7 @@ $result = $conn->query($sql);
                         }
                         if ($resultProducts ->num_rows > 0) {
                             // output data of each row
-
+                            
                             while ($rowProducts = $resultProducts ->fetch_assoc()) {
                             $id = $rowProducts["ID"];    
                             $sqlPicture = "SELECT * FROM Pictures WHERE Products_ID='$id' LIMIT 1";
@@ -117,6 +119,7 @@ $result = $conn->query($sql);
                             
                             echo " Name: <a href='product.php?id=$id'>" . $rowProducts["Title"] . "</a><br> Cena: " . $rowProducts["Price"] . "<br><img src=" . $rowPicture["url"] . " alt=" . $rowPicture["Title"] . " height='60' width='100'>";
                             }
+                            
                         }
                 echo "</div>";
             }
