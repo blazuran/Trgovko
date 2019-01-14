@@ -192,7 +192,11 @@ if ($orderby == "Stores_ID") {
             $StoreName=$rowStores["Name"];
             $StoreName=substr($StoreName, 0, 3);
             $prikazi = "prikazi('".$StoreName."')";
+<<<<<<< HEAD
                 echo $rowStores["Name"]."<button class=\"button button5\"  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName style=\"display:none\">";
+=======
+                echo $rowStores["Name"]."<button  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName>";                
+>>>>>>> 567ed58338a320046a1aef4b8429d7d84fe19020
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);
