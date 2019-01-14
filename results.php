@@ -1,7 +1,7 @@
 <?php
 include "header.php";
 include_once "db.php";
-$search_value;
+$search_value ="";
 $price_max = 5000;
 $price_min = 0;
 //$sql;
@@ -14,8 +14,15 @@ $price_min = 0;
     {
     $price_min = isset($_GET["price-min"]) ? $_GET["price-min"] : 0;
     $price_max = isset($_GET["price-max"]) ? $_GET["price-max"] : 5000;
-    
-    $search_value = $_GET["search_value"];
+    if(isset($_GET["search_value"]))
+    {
+      $search_value = $_GET["search_value"];  
+    }
+    else
+    {
+        $search_value = "";
+    }
+        
      $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
     } 
     if(!isset($_POST['search_value']) && !isset($_GET["search"]))
@@ -190,10 +197,8 @@ if ($orderby == "Stores_ID") {
             while ($rowStores = $resultStores->fetch_assoc()) {
             $StoreName=$rowStores["Name"];
             $StoreName=substr($StoreName, 0, 3);
-            $prikazi = "prikazi('".$StoreName."')";
 
                 echo $rowStores["Name"]."<button class=\"button button5\"  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName style=\"display:none\">";
-                echo $rowStores["Name"]."<button  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName>";
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);
