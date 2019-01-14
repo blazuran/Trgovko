@@ -76,7 +76,7 @@ $result = mysqli_query($conn, $sql)
 <br>
                 <div class="dropdown">
                     <h6> Kategorije...</h6>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" style="">
                     <?php 
                     $sql_get_cats = "SELECT * FROM categories";
                     
@@ -85,7 +85,7 @@ $result = mysqli_query($conn, $sql)
                     {
                         while ($row1 = mysqli_fetch_assoc($result1))
                         {
-                           echo "<input type='checkbox' name='arr[]' value='".$row1['Title']."'>".$row1['Title'].""; 
+                           echo "<input type='checkbox' name='arr[]' value='".$row1['Title']."'>".$row1['Title']."";
                         }
                     }
                     
