@@ -74,7 +74,7 @@ $result = mysqli_query($conn, $sql)
                 <div data-role="rangeslider">
                     <h6>Cena...</h6>
                     <div class="dropdown-content">
-                    <label for="price-min">Min:<span id="demo"></span></p></label>
+                    <label for="price-min">Min:<span id="demo1"></span></p></label>
                     <input type="range" name="price-min" id="price-min" value="<?= isset($_GET["price-min"]) ? $_GET["price-min"] : 0; ?>" min="0" max="5000">
                     <label for="price-max">Max:<span id="demo2"></span></label>
                     <input type="range" name="price-max" id="price-max" value="<?= isset($_GET["price-max"]) ? $_GET["price-max"] : 5000; ?>" min="0" max="5000">
@@ -192,7 +192,7 @@ if ($orderby == "Stores_ID") {
             $StoreName=$rowStores["Name"];
             $StoreName=substr($StoreName, 0, 3);
             $prikazi = "prikazi('".$StoreName."')";
-                echo $rowStores["Name"]."<button onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName>";                
+                echo $rowStores["Name"]."<button class=\"button button5\"  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName style=\"display:none\">";
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);

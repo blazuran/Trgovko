@@ -47,17 +47,17 @@
 
 <script>
     var slider_min = document.querySelector("#price-min");
-    var output=document.getElementById("demo");
+    var output=document.getElementById("demo1");
     output.innerHTML = slider_min.value;
     slider_min.oninput = function() {
         output.innerHTML=this.value;
        // console.log("Price-min: ", this.value);
     }
     var slider_max = document.querySelector("#price-max");
-    var output=document.getElementById("demo2");
-    output.innerHTML = slider_max.value;
+    var output1=document.getElementById("demo2");
+    output1.innerHTML = slider_max.value;
     slider_max.oninput = function() {
-        output.innerHTML=this.value;
+        output1.innerHTML=this.value;
         //console.log("Price-max: ", this.value);
     }
 
