@@ -20,7 +20,7 @@ $price_min = 0;
     }
     else
     {
-        $search_value = "";
+        $search_value = $_GET["search"];
     }
         
      $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min."";
