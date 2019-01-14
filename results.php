@@ -63,7 +63,6 @@ $result = mysqli_query($conn, $sql)
                 <div class="fl_right">
                         <fieldset>
                             <input type="text" name="search_value" value="<?= isset($_GET["search_value"]) ? $_GET["search_value"] : ""; ?>" placeholder="Išči tukaj&hellip;">
-                            <button class="fa fa-search" type="submit" title="Search"></button>
                         </fieldset>
                 </div>
             </div>
