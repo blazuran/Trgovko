@@ -4,6 +4,7 @@ include_once "db.php";
 include_once "session.php";
 ?>
 <?php 
+echo "<a href='bigbang.php'> BigBang Scraper </a><a href='scraper.php'> Sestavi.si Scraper </a><a href='mlacom.php'> Mlacom Scraper </a><a href='markosoftscrap.php'> Markosoft Scraper </a>";
  echo "<h1>Uporabniki</h1>";
 if(isset($_SESSION['Name']) && isset($_SESSION['Surname'])&& $_SESSION['Admin']==1)
 {
