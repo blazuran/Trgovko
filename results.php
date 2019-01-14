@@ -23,12 +23,12 @@ $price_min = 0;
         $search_value = "";
     }
         
-     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min."";
     } 
     if(!isset($_POST['search_value']) && !isset($_GET["search"]))
     {
     $search_value = "";
-     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min.";";
+     $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title LIKE '%".$search_value."%' AND Price <= ".$price_max." AND Price >= ".$price_min."";
     }
     if(isset($_GET['arr']))
     {
@@ -46,15 +46,17 @@ $price_min = 0;
                  $sql = $sql . " categories.Title = '$val'";
              }
          }
-         $sql = $sql . ");";
+         $sql = $sql . ")";
     }
     
     if (isset($_GET["order"])) {
     $orderby = $_GET["order"];
-    $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title like '%$search_value%' ORDER BY $orderby;";
+    $sql =  $sql." ORDER BY products.$orderby;";
+    $sql = str_replace(";", "", $sql);
 } else {
     $orderby = "Price ASC";
-    $sql = "SELECT products.Title as produkt, products.ID, products.Price FROM `products` WHERE Title like '%$search_value%'";
+    $sql = $sql." ORDER BY products.$orderby;";
+    $sql = str_replace(";", "", $sql);
 }
     //echo $sql."<br>";
 $result = mysqli_query($conn, $sql)
@@ -198,7 +200,7 @@ if ($orderby == "Stores_ID") {
             $StoreName=$rowStores["Name"];
             $StoreName=substr($StoreName, 0, 3);
 
-                echo $rowStores["Name"]."<button class=\"button button5\"  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName style=\"display:none\">";
+                echo $rowStores["Name"]."<br><button class=\"button button5\"  onclick='prikazi(".'"'.$StoreName.'"'.")'>Prikazi</button><div id=$StoreName style=\"display:none\">";
                 $storeID=$rowStores["ID"];
                     $sqlProducts  = "SELECT * FROM `products` WHERE (Title like '%$search_value%') AND ($storeID=Stores_ID)";
                     $resultProducts  = $conn->query($sqlProducts);
@@ -232,7 +234,7 @@ if ($orderby == "Stores_ID") {
                             }
                             
                         }
-                echo "</div>";
+                echo "</div><br>";
             }
         }
     }
